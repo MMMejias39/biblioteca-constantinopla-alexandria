@@ -32,3 +32,6 @@ A priorização 80/20 (80,000 Hours) segue como **método** de seleção — nã
 2. **Redundância**: nenhuma obra crítica pode depender de um único servidor ou jurisdição.
 3. **Acesso sem conexão**: todo recurso essencial precisa de caminho offline (baixável).
 4. **Rastreabilidade**: cada entrada com link oficial e data de verificação.
+
+## Licença
+MIT (ver `LICENSE`). Nota da Carta: MIT concede direitos, não posse — quem mantém, *kuro* (cuida). Saberes de povos originários seguem CARE: autoridade de quem os guarda vem antes desta licença.
