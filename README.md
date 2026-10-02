@@ -23,6 +23,7 @@ A priorização 80/20 (80,000 Hours) segue como **método** de seleção — nã
 - `catalogo/saberes-e-territorios.md` — saberes sob autoridade de quem os guarda (CARE)
 - `catalogo/poder-global.md` — observatório do poder global (ONU, OTAN e blocos) sob os 6 testes
 - `consenso-global.md` — núcleo de regras de consenso entre religiões e culturas (interseção, não soma)
+- `permanencia.md` — contrato de séculos: cláusulas de pedra, validação, linhagem (600 a.C.→2026), precedentes
 - `preservacao.md` — protocolo de preservação e redundância (núcleo Constantinopla)
 - `idioma/` — **Visena v0.1**, segunda língua da biblioteca: bondade, serenidade e convivência do bioma na gramática
 
