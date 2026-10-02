@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:visena:hmf:schema:v0.1",
+  "title": "Visena-HMF v0.1 — etiqueta Humano–Máquina–Fauna",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["visena", "evidencial", "ona", "fonte", "ts", "dignidade"],
+  "properties": {
+    "visena": {"type": "string", "description": "Frase em Visena; evidencial ao final (exceto 'si' terminal do predicado)."},
+    "evidencial": {"enum": ["ve", "ao", "so", "si", "su"]},
+    "confianca": {"enum": ["gran", "pu"], "description": "gran=alta; pu=baixa. Obrigatória quando evidencial é so/su."},
+    "ona": {
+      "type": "object", "additionalProperties": false, "required": ["tipo", "id"],
+      "properties": {
+        "tipo": {"enum": ["pe", "an", "aro", "pla", "te", "outro"]},
+        "id": {"type": "string"},
+        "especie_hint": {"type": "string"},
+        "populacao_note": {"type": "string"}
+      }
+    },
+    "evento": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "raiz": {"enum": ["son", "vid", "od", "movimento", "distress", "chuva", "temperatura", "vento", "luz", "outro"]},
+        "descricao": {"type": "string"},
+        "valor": {"type": ["number", "string", "null"]}
+      }
+    },
+    "fonte": {
+      "type": "object", "additionalProperties": false, "required": ["tipo", "id"],
+      "properties": {
+        "tipo": {"enum": ["mic", "camara", "sensor", "modelo", "humano", "arquivo"]},
+        "id": {"type": "string"},
+        "modelo": {"type": "string"},
+        "dataset": {"type": "string"},
+        "licenca": {"type": "string"}
+      }
+    },
+    "alp_data": {
+      "type": "object", "additionalProperties": false,
+      "description": "Link com amostra de alp-data (ESP): procedência viaja com os dados.",
+      "properties": {
+        "dataset": {"type": "string"},
+        "sample_id": {"type": "string"},
+        "sample_rate": {"type": "number"}
+      }
+    },
+    "ts": {"type": "string", "format": "date-time"},
+    "local": {
+      "type": "object", "additionalProperties": false,
+      "properties": {"lat": {"type": "number"}, "lon": {"type": "number"}, "nota": {"type": "string"}}
+    },
+    "prioridade": {"enum": ["alta", "media", "baixa"]},
+    "acao_sugerida": {
+      "type": "object", "additionalProperties": false, "required": ["tipo", "aprovada_por_humano"],
+      "description": "Enum deliberadamente SEM ações de confinamento/captura (regra de dignidade 3).",
+      "properties": {
+        "tipo": {"enum": ["nenhuma", "alerta_humano", "chamar_pessoa", "registrar"]},
+        "aprovada_por_humano": {"type": "boolean"}
+      }
+    },
+    "corpus": {"type": "string", "description": "ID da entrada no corpus bilíngue da biblioteca."},
+    "dignidade": {
+      "type": "object", "additionalProperties": false,
+      "required": ["distress_prioritario", "sem_atuacao_automata_de_confinamento", "fauna_e_ona"],
+      "properties": {
+        "distress_prioritario": {"const": true},
+        "sem_atuacao_automata_de_confinamento": {"const": true},
+        "fauna_e_ona": {"const": true}
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"evidencial": {"enum": ["so", "su"]}}, "required": ["evidencial"]},
+      "then": {"required": ["confianca"]}
+    },
+    {
+      "if": {"properties": {"evento": {"properties": {"raiz": {"const": "distress"}}}}, "required": ["evento"]},
+      "then": {"required": ["prioridade", "acao_sugerida"]}
+    }
+  ]
+}
