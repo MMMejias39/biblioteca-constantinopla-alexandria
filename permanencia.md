@@ -59,6 +59,19 @@
 - **Robin Wall Kimmerer** (2013, *Braiding Sweetgrass*; trad. "Tecendo a Doce Grama", 2023): ciência indígena + botânica; a gratidão como método.
 - Nota: os textos citados existem publicados; datas de memória estável; URLs pendentes de verificação de rede.
 
+## 6. Regra de Perpetuação de Definições (v1.0)
+**Axioma (do professor): "Verdade é independente de tempo ou de pessoa."**
+Convergência filosófica: conceitos objetivos de Frege; mundo 3 de Popper — o conhecimento vive no texto, não no pensador; e com a transmissão por contagem da Torá. A verdade não pertence a quem escreve, nem à sua época: o texto existe para sobreviver ao autor.
+
+1. **Definição é operacional**: declara apenas condições observáveis e testáveis — nunca valor. Valores vivem na Carta, declarados abertamente; definição que carrega valor oculto fabrica conflito (o motor das disputas de Bíblia e Alcorão).
+2. **Cópia é sem paráfrase**: replicar é produzir bytes idênticos, provados por hash; quem parafraseia assina como *interpretação* (pasta separada), nunca como cânon.
+3. **Tradução sempre marcada**: versão em outra língua carrega a etiqueta "tradução (não canônica)" + carimbo próprio; divergência entre tradução e cânon resolve no cânon — sempre.
+4. **Append-only + quórum**: emendar definição só por versão nova, citando a anterior, com data e quórum (§2).
+5. **Testes de sobrevivência** — a definição só permanece se valer: (a) sem o autor; (b) sem a tecnologia da época; (c) sem a cultura local; (d) lida por um forasteiro sem nota de autoria. Falha em qualquer = opinião, e vai para interpretação.
+6. **Em Visena** (v0.4): o equivalente é o carimbo — `ve` + `«versão/hash»`. Frase do axioma: `Ve; ne mi; ne nu.` (a prova: sem meu nome, sem minha época).
+7. **Nunca se perpetua**: nomes como fonte de verdade; modas de época; chave de leitura local. Perpetua-se a definição — quem lê depois herda o sentido, sem herdar o leitor.
+8. **Forma citável de qualquer afirmação**: `documento.md «versão/hash»` — ex.: `consenso-global.md «v0.4/<hash>»`. Sem carimbo, é citação de opinião, não de verdade.
+
 ## 5. Precedentes de sobrevivência de texto (o que as provas dizem)
 - **Rolos do Mar Morto**: 2000+ anos, cerâmica + desertos — a mídia certa importa.
 - **Escritas da Torá**: cada letra contada, cada linha conferida — **verificação humana como checksum**; o modelo do manifesto.

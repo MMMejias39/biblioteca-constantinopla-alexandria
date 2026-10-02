@@ -32,3 +32,7 @@
 ## Perguntas de paz
 - **Ki tu vo?** — o que você quer?
 - **Tu si si-ne?** → **Tu si be?** — você está bem por dentro? ("sente bondade?")
+
+## Veracidade e perpetuação (v0.4)
+- **Ve; ne mi; ne nu.** — a prova: sem meu nome, sem minha época (axioma do professor)
+- Cita-se: `documento.md «versão/hash»` — sem carimbo, é opinião, não verdade
