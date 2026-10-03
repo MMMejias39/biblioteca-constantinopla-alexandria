@@ -1,7 +1,7 @@
 # Catálogo — Saberes e Territórios (sob autoridade de quem os guarda)
 
 Pilar de convivência. **Regra: nada aqui é cópia de saber originário; são pontes para quem detém a autoridade (CARE).**
-Referência de verificação: outubro de 2026.
+Referência de verificação: 2026-10-02.
 
 ## Governança de dados e saberes
 - **CARE Principles for Indigenous Data Governance** — Coletivo, Autoridade de controlar, Responsabilidade, Ética; correção da era "aberto para todos". GIDA (2019), publicação em Data Science Journal (Carroll et al., 2020). https://www.gida-global.org/careprinciples

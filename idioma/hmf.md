@@ -1,7 +1,7 @@
 # Visena–HMF — Perfil Humano–Máquina–Fauna v0.1
 
 Camada de interface da linguagem Visena para comunicação mediada por máquina com o bioma.
-Verificação: out/2026 · camada de decodificação já existe em campo aberto.
+Verificação: 2026-10-02 · camada de decodificação já existe em campo aberto.
 
 ## Arquitetura em três camadas
 1. **Fauna** — sinais multimodais reais (som, postura, química). Não se "fala" com animais em linguagem formal; se *escuta* e se *interpreta*.

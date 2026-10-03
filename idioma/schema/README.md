@@ -1,6 +1,6 @@
 # Visena-HMF — Esquema de Etiquetas v0.1 (JSON)
 
-Versão de verificação: out/2026 · alinha com **alp-data** (ESP, `pip install alp-data`, 35+ datasets bioacústicos, procedência viaja com os dados) e **NatureLM-audio**.
+Versão de verificação: 2026-10-02 · alinha com **alp-data** (ESP, `pip install alp-data`, 35+ datasets bioacústicos, procedência viaja com os dados) e **NatureLM-audio**.
 
 ## Mapeamento partícula → campo
 | Visena | JSON |

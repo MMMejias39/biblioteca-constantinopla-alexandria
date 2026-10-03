@@ -1,6 +1,6 @@
 # O Núcleo do Consenso v0.1
 **Regras com maior probabilidade de acordo entre religiões, culturas e povos.**
-Método: **interseção, não soma** — uma regra entra só se estiver presente em tradições independentes **e** nos documentos consensuais modernos (DUDH 1948; Declaração para uma Ética Global, Parlamento das Religiões, Chicago 1993, Hans Küng; Carta da Terra 2000 — 16 princípios em 4 pilares; CARE/GIDA 2019). Verificação de URLs: **pendente** (acesso de rede negado nesta rodada).
+Método: **interseção, não soma** — uma regra entra só se estiver presente em tradições independentes **e** nos documentos consensuais modernos (DUDH 1948; Declaração para uma Ética Global, Parlamento das Religiões, Chicago 1993, Hans Küng; Carta da Terra 2000 — 16 princípios em 4 pilares; CARE/GIDA 2019). Verificação de URLs: **verificada (2026-10-02)** — 38/38 vivas; 4 delas respondem 403 a clientes automatizados (bloqueio a bots, não link morto), confirmadas por via alternativa.
 
 ## I. Entre pessoas
 1. **Regra de ouro — e de consentimento**: não faça ao outro o que não quer para si; e o que fizer, faça **como o outro quer** (Hillel; Levítico 19:18; Analectos XV.24; Udana-varga; Hadith; Mahabharata; Gathas (hinos) de Zoroastro; Ética Global §3). Em Visena: `Fa ki ona vo, ne ki tu vo.`

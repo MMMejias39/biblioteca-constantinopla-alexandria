@@ -23,3 +23,4 @@ O caso *Hachette v. Internet Archive* mostra que até as maiores bibliotecas dig
 
 ## 6. Ciclo de verificação
 Semestral: conferir links, licenças e disponibilidade de todas as entradas dos catálogos; registrar a data da última verificação.
+- **Última verificação completa: 2026-10-02** — 38/38 URLs vivas (0 mortas; 4 com HTTP 403 por bloqueio a bots, confirmadas por via alternativa).

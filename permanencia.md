@@ -57,7 +57,15 @@
 - **Davi Kopenawa** (com Bruce Albert, 2013, *A Queda do Céu*): o Yanomami que fala da floresta pensando em sete gerações.
 - **Ailton Krenak** (2019, *Ideias para adiar o fim do mundo*): adiamento do fim — o nome técnico do Pilar 1.
 - **Robin Wall Kimmerer** (2013, *Braiding Sweetgrass*; trad. "Tecendo a Doce Grama", 2023): ciência indígena + botânica; a gratidão como método.
-- Nota: os textos citados existem publicados; datas de memória estável; URLs pendentes de verificação de rede.
+- Nota: os textos citados existem publicados; datas de memória estável; verificação de URLs do projeto concluída (2026-10-02: 38/38 vivas); links individuais por obra ainda não anexados ao acervo.
+
+## 5. Precedentes de sobrevivência de texto (o que as provas dizem)
+- **Rolos do Mar Morto**: 2000+ anos, cerâmica + desertos — a mídia certa importa.
+- **Escritas da Torá**: cada letra contada, cada linha conferida — **verificação humana como checksum**; o modelo do manifesto.
+- **Roseta** (196 a.C.): mesma frase em três textos — **tradução tripla é redundância**.
+- **Svalbard** (2008): duplicação fria, distribuída, fora da política — o modelo geográfico.
+- **Alexandria** (uma sede, fogo) vs **Constantinopla** (cópias, mil anos) — a regra: sede única morre; cópia vive.
+- **Era escura digital**: formatos morrem; por isso: texto simples + PDF/A + papel + manifesto.
 
 ## 6. Regra de Perpetuação de Definições (v1.0)
 **Axioma (do professor): "Verdade é independente de tempo ou de pessoa."**
@@ -72,10 +80,5 @@ Convergência filosófica: conceitos objetivos de Frege; mundo 3 de Popper — o
 7. **Nunca se perpetua**: nomes como fonte de verdade; modas de época; chave de leitura local. Perpetua-se a definição — quem lê depois herda o sentido, sem herdar o leitor.
 8. **Forma citável de qualquer afirmação**: `documento.md «versão/hash»` — ex.: `consenso-global.md «v0.4/<hash>»`. Sem carimbo, é citação de opinião, não de verdade.
 
-## 5. Precedentes de sobrevivência de texto (o que as provas dizem)
-- **Rolos do Mar Morto**: 2000+ anos, cerâmica + desertos — a mídia certa importa.
-- **Escritas da Torá**: cada letra contada, cada linha conferida — **verificação humana como checksum**; o modelo do manifesto.
-- **Roseta** (196 a.C.): mesma frase em três textos — **tradução tripla é redundância**.
-- **Svalbard** (2008): duplicação fria, distribuída, fora da política — o modelo geográfico.
-- **Alexandria** (uma sede, fogo) vs **Constantinopla** (cópias, mil anos) — a regra: sede única morre; cópia vive.
-- **Era escura digital**: formatos morrem; por isso: texto simples + PDF/A + papel + manifesto.
+## 7. Registro de mudanças do contrato
+- **2026-10-02 (v0.5)**: verificação de URLs do projeto (38/38 vivas; 4 com HTTP 403 a clientes automatizados — bloqueio a bots, não link morto; confirmadas por via alternativa). Reordenação das seções §5/§6 — os precedentes de sobrevivência voltam ao lugar antes da Regra de Perpetuação; **conteúdo das seções inalterado**; a ordem anterior permanece no Git e no manifesto: `permanencia.md «v0.4/b6d51052...»`.

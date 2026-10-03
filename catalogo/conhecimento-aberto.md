@@ -1,6 +1,6 @@
 # Catálogo — Conhecimento Aberto (núcleo Alexandria)
 
-Referência de verificação: outubro de 2026.
+Referência de verificação: 2026-10-02.
 
 ## Enciclopédia e mídia livre
 - **Wikimedia (Wikipédia, Commons, Wikidata, Wikcionário)** — maior acervo colaborativo sob CC BY-SA; base de dados reutilizável. https://www.wikimedia.org

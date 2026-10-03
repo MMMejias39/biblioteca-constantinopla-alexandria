@@ -1,5 +1,5 @@
 # Observatório do Poder Global v0.1
-Fatos canônicos de memória (datas estáveis); números marcados "aprox."; verificação de rede pendente nesta rodada.
+Fatos canônicos de memória (datas estáveis); números marcados "aprox." — verificação factual dos números ainda pendente. URLs verificadas em 2026-10-02 (todas vivas).
 
 ## ONU — veredicto em duas metades
 ### O anacronismo estrutural (a usurpação instituída)

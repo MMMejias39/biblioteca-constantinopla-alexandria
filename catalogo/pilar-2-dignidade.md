@@ -1,6 +1,6 @@
 # Catálogo — Pilar 2: Dignidade para pessoas e outros animais
 **Prioridade: dar maior dignidade a pessoas e a outros animais mortos ou encerrados sem motivos concretos.**
-Referência de verificação: outubro de 2026.
+Referência de verificação: 2026-10-02.
 
 ## Pessoas — saúde e educação contra a pobreza extrema
 - **Kolibri (Learning Equality)** — aprendizagem offline em hardware de baixo custo, para escolas sem internet. https://learningequality.org/kolibri/

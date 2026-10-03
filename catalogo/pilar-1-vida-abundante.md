@@ -1,6 +1,6 @@
 # Catálogo — Pilar 1: Vida abundante na Terra
 **Prioridade máxima da biblioteca: não destruir novamente a possibilidade de vida em abundância na Terra.**
-Referência de verificação: outubro de 2026.
+Referência de verificação: 2026-10-02.
 
 ## Energia e clima
 - **PyPSA** — modelagem aberta de sistemas elétricos com altas taxas de renováveis; usada em planos de descarbonização nacionais. https://github.com/PyPSA/PyPSA
