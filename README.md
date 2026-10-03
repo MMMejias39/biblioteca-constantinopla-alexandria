@@ -25,6 +25,9 @@ A priorização 80/20 (80,000 Hours) segue como **método** de seleção — nã
 - `consenso-global.md` — núcleo de regras de consenso entre religiões e culturas (interseção, não soma)
 - `permanencia.md` — contrato de séculos: cláusulas de pedra, validação, linhagem (600 a.C.→2026), precedentes
 - `preservacao.md` — protocolo de preservação e redundância (núcleo Constantinopla)
+- `veracidade/` — a Marca de Veracidade: carimbo `(versão, hash, data)` + dossiê de quórum para as assinaturas
+- `espelhos/` — lista operacional da cadeia de espelhos (Codeberg, Forgejo, IA, Zenodo, IPFS, `.zim`, papel) + metadados prontos
+- `fria.sh` — gera a edição anual em papel (texto simples + manifesto + assinaturas)
 - `idioma/` — **Visena v0.1**, segunda língua da biblioteca: bondade, serenidade e convivência do bioma na gramática
 
 ## Princípios de curadoria

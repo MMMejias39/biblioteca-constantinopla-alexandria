@@ -1,0 +1,9 @@
+identifier: biblioteca-constantinopla-alexandria
+mediatype: texts
+title: Biblioteca Constantinopla-Alexandria (acervo canônico)
+creator: Biblioteca Constantinopla-Alexandria
+date: 2026-10-03
+language: por
+licenseurl: https://opensource.org/licenses/MIT
+description: Acervo de curadoria, preservação e distribuição de conhecimento aberto — Pilares: vida abundante na Terra; dignidade para pessoas e outros animais. Verificação de integridade: sha256sum -c MANIFESTO.sha256. Saberes de povos originários seguem CARE (não acervo livre).
+collection: opensource

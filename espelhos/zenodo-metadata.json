@@ -1,0 +1,12 @@
+{
+  "title": "Biblioteca Constantinopla-Alexandria — acervo canônico",
+  "creators": [{"name": "Biblioteca Constantinopla-Alexandria", "affiliation": "ninguém é dono; quem mantém, kuro (cuida)"}],
+  "publication_date": "2026-10-03",
+  "resource_type": {"id": "publication-preprint"},
+  "license": {"id": "mit"},
+  "language": "por",
+  "version": "v0.8",
+  "keywords": ["conhecimento aberto", "preservação digital", "CARE", "convivência", "ecologia", "Visena", "acesso offline"],
+  "description": "<p>Curadoria, preservação e distribuição de conhecimento aberto a serviço de dois pilares: (1) vida abundante na Terra — prioridade máxima; (2) dignidade para pessoas e outros animais. Texto simples + manifesto SHA-256; qualquer cópia se prova com <code>sha256sum -c MANIFESTO.sha256</code>.</p><p><b>CARE antes de FAIR</b>: saberes de povos originários seguem GIDA/CARE (2019) — autoridade de quem guarda vem antes da utilidade; esse conteúdo não está no acervo, apenas como referência de respeito.</p><p>Carimbo da versão: «v0.8/bd883ea67ca8d5732eea4171c0e7e2df2170406f2044cd36684ebde5f9e4f93f».</p>",
+  "notes": "Um DOI por versão (carimbo). Trocar version/publication_date/keywords pela linha mais recente de veracidade/carimbo.txt antes do upload."
+}
