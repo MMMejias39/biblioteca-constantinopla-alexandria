@@ -1,0 +1,7 @@
+{
+  "alp_data": {"dataset": "exemplo-manada", "sample_id": "s-2210", "sample_rate": 16000},
+  "tags": [{"rotulo": "agonia possível", "score": 0.41, "origem": "modelo"}],
+  "modelo": {"nome": "NatureLM-audio"},
+  "fonte": {"tipo": "camara", "id": "cam-sul-5"},
+  "ts": "2026-10-03T04:02:00Z"
+}

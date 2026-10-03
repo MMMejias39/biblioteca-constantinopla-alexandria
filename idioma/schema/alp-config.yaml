@@ -1,0 +1,75 @@
+# Visena-HMF — Configuração alp-data v0.1 (2026-10-03)
+# Contrato do hook pós-decodificação (pos_decodificar.py): o que entra do alp-data,
+# como vira evidencial e confiança, e onde o "aberto" termina (dignidade).
+# Divergência resolve no schema: visena-hmf.schema.json (cânon duplo, permanencia.md §2).
+
+alp_data:
+  pacote: "alp-data"                     # pip install alp-data (Earth Species Project)
+  versao_verificada: "v1.10.0"           # PyPI, out/2026
+  github: "https://github.com/earthspecies/alp-data"
+  licenca: "MIT"
+  amostra:                               # o que o hook exige de cada amostra
+    dataset: null
+    sample_id: null
+    sample_rate: 16000
+
+modelo:
+  id: "esp-naturelm"
+  nome: "NatureLM-audio"
+  hf: "EarthSpeciesProject/NatureLM-audio"
+  referencia: "ICLR 2025 (ESP) — verificação 2026-10-03"
+
+entrada:
+  campos_obrigatorios: ["alp_data", "tags", "modelo", "fonte", "ts"]
+  # tag = {rotulo: str, origem: str, score?: 0..1, valor?: número}
+  # origem: modelo | sensor | etiqueta_do_dataset | arquivo | outro_no
+
+mapeamento:
+  evidencial:                            # hmf.md: quem viu?
+    ve: ["sensor"]                       # dado bruto — a câmera/mic/sensor viu
+    so: ["modelo"]                       # inferência do modelo — sempre com confianca
+    ao: ["etiqueta_do_dataset", "arquivo", "outro_no"]  # relato de outrem (anotador do dataset)
+    si: []                               # estado interno humano — NUNCA emitido por máquina
+    su: []                               # automático quando o modelo não dá pontuação (indistinguível)
+  rotulos_para_raiz:                     # prefixo do rótulo → evento.raiz (enum do schema)
+    canto: son
+    som: son
+    distress: distress
+    agonia: distress
+    dor: distress
+    sofrimento: distress
+    panico: distress
+    chamado de socorro: distress
+    vento: vento
+    luz: luz
+    chuva: chuva
+    temperatura: temperatura
+    movimento: movimento
+  limiar_confianca_gran: 0.80            # score >= → "gran"; abaixo ou ausente → "pu"
+  # Generosidade em presença (dignidade 5): TODO rótulo de sofrimento vira distress com
+  # prioridade alta, independentemente da pontuação — falso negativo custa mais;
+  # a afirmação continua marcada so/su + confianca (a prova vem antes da afirmação).
+
+frases:                                  # templates: raiz → frase-base (evidencial entra ao final)
+  distress: "An distress"
+  son: "An son gran"
+  vento: "Ven gran"
+  luz: "Lu gran"
+  padrao: "An outro"                     # sem raiz nova: frases novas só por processo.md §4 (línguista-par)
+
+acao_sugerida_padrao:
+  prioridade: baixa
+  tipo: nenhuma
+  aprovada_por_humano: false
+
+dignidade:                               # invariáveis — o hook recusa o contrário
+  distress_prioritario: true
+  sem_atuacao_automata_de_confinamento: true
+  fauna_e_ona: true
+  acoes_proibidas: [abrir, fechar, capturar, confinar, sedar, mover]
+  ao_recusar: "troca por alerta_humano (aprovada_por_humano=false); recusa registrada no evento.descricao — nunca executada, nunca silenciada"
+
+registro:
+  saida_padrao: "stdout (jsonl)"
+  append: "--out caminho.jsonl (append-only; nada se apaga)"
+  revalidacao: "toda etiqueta sai só depois de passar em validar.py — contrato único"

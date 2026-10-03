@@ -1,0 +1,9 @@
+{
+  "alp_data": {"dataset": "exemplo-ave", "sample_id": "s-4471", "sample_rate": 16000},
+  "tags": [{"rotulo": "canto de ave", "score": 0.91, "origem": "modelo"}],
+  "modelo": {"nome": "NatureLM-audio"},
+  "fonte": {"tipo": "mic", "id": "cam-norte-2"},
+  "ts": "2026-10-03T21:30:00Z",
+  "ona": {"tipo": "an", "id": "alp-00021", "especie_hint": "ave"},
+  "local": {"nota": "exemplo didático — localização omitida"}
+}

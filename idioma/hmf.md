@@ -33,6 +33,7 @@ Fluxo típico: sinal do an → máquina decodifica → Visena: `An son gran, so 
 7. A fauna não precisa "aprender Visena": quem se adapta à interface é o lado humano-máquina.
 
 ## Compatibilidade registrada
-- **NatureLM-audio** — modelo fundacional de áudio para bioacústica (ESP). https://earthspecies.org
-- **alp-data** — camada compartilhada de dados para procesamento de linguagem animal (pip, 2026). https://earthspecies.org
+- **NatureLM-audio** — modelo fundacional de áudio para bioacústica (ESP; ICLR 2025). https://earthspecies.org
+- **alp-data** — camada compartilhada de dados para procesamento de linguagem animal (pip; `v1.10.0`, MIT; 35+ datasets — verificação 2026-10-03). https://github.com/earthspecies/alp-data
+- **Config + hook** (2026-10-03): `schema/alp-config.yaml` + `schema/pos_decodificar.py` — evidencial pela origem do rótulo, `confianca` automática do score, distress sempre prioritário, atuação automática de confinamento/captura recusada e registrada (regra 3).
 - Encaixe: alp-data/NatureLM → (etiquetas de evento) → Visena–HMF (frase com evidencial) → humano; caminho reverso para atuação segura.

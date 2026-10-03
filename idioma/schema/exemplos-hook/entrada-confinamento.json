@@ -1,0 +1,10 @@
+{
+  "alp_data": {"dataset": "exemplo-confi", "sample_id": "s-9901", "sample_rate": 16000},
+  "tags": [
+    {"rotulo": "distress", "score": 0.55, "origem": "modelo"},
+    {"acao_automatica": {"tipo": "confinar", "motivo": "contenção de emergência"}}
+  ],
+  "modelo": {"nome": "NatureLM-audio"},
+  "fonte": {"tipo": "camara", "id": "cam-leste-1"},
+  "ts": "2026-10-03T09:00:00Z"
+}

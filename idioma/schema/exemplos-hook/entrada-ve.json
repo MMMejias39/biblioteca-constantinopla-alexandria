@@ -1,0 +1,8 @@
+{
+  "alp_data": {"dataset": "sensor-te", "sample_id": "sen-09-0103", "sample_rate": 16000},
+  "tags": [{"rotulo": "vento", "origem": "sensor", "valor": 65}],
+  "modelo": {"nome": "nenhum-dado-bruto"},
+  "fonte": {"tipo": "sensor", "id": "sen-09"},
+  "ts": "2026-10-03T22:00:00Z",
+  "local": {"nota": "exemplo didático"}
+}

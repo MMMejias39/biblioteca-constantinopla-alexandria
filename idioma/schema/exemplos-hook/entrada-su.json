@@ -1,0 +1,7 @@
+{
+  "alp_data": {"dataset": "exemplo-marinho", "sample_id": "s-8812", "sample_rate": 16000},
+  "tags": [{"rotulo": "movimento na superfície", "origem": "modelo"}],
+  "modelo": {"nome": "NatureLM-audio"},
+  "fonte": {"tipo": "mic", "id": "mic-mares-1"},
+  "ts": "2026-10-03T23:15:00Z"
+}
