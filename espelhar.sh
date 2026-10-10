@@ -1,22 +1,40 @@
-#!/usr/bin/env bash
-# Multiplicação em tempo real: push simultâneo em todos os Gits + cópias físicas
-# Uso: ./espelhar.sh  (roda automático após cada commit, pelo hook)
-set -u
-cd "$(dirname "$0")"
-cd "$(dirname "$0")" || exit 1
-BR=$(git branch --show-current)
+#!/bin/bash
+# espelhar.sh — Replicação automática BABEL em múltiplos git services
 
-# 1. todos os remotes configurados (origin=github; adicionar gitlab e codeberg quando criados)
-git remote | while read R; do git push "$R" "$BR" 2>&1 | grep -q "up to date\|main" || echo "aviso: falha em $R"; done
+set -e
 
-# 2. bundle datado (cópia física #2)
-git bundle create "/home/mejias/Documentos/biblioteca-convivencia-$BR.bundle" "$BR" >/dev/null 2>&1
+echo "🌍 REPLICAÇÃO BABEL — Múltiplas Jurisdições"
+echo "=============================================="
 
-# 3. cópia sincronizada (pasta de nuvem pessoal, se existir e escrevível)
-GD="/home/mejias/google-drive"
-if [ -d "$GD" ] && [ -w "$GD" ]; then
-  mkdir -p "$GD/biblioteca-convivencia" 2>/dev/null && \
-  tar --exclude='.git' -czf "$GD/biblioteca-convivencia/acervo.tar.gz" . 2>/dev/null && \
-  cp -f MANIFESTO.sha256 veracidade/carimbo.txt "$GD/biblioteca-convivencia/" 2>/dev/null
-fi
-echo "espelhado: git × $(git remote | wc -l) · bundle ✓ · nuvem ✓"
+REPO_DIR=$(pwd)
+
+echo "📤 ESPELHOS CONFIGURADOS:"
+git remote -v
+
+echo ""
+echo "📤 SINCRONIZANDO..."
+
+# Push para main (GitHub)
+echo "  1️⃣  GitHub (USA)..."
+git push origin main
+
+# Push para cada remote configurado
+for remote in $(git remote | grep -v origin); do
+    echo "  ➡️  $remote..."
+    if git push "$remote" main 2>/dev/null; then
+        echo "     ✅ OK"
+    else
+        echo "     ⚠️  Falha (verifique credenciais)"
+    fi
+done
+
+echo ""
+echo "✅ SINCRONIZAÇÃO CONCLUÍDA"
+echo ""
+echo "📊 Status de Espelhos:"
+git remote -v
+
+echo ""
+echo "🎯 Para adicionar novo espelho:"
+echo "  git remote add <nome> <url>"
+echo "  git push <nome> main"
