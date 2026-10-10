@@ -1,0 +1,229 @@
+════════════════════════════════════════════════════════════════════════════════
+VISENA v1.0 — BABEL SEMANTIC CORE (UNIVERSAL / IDIOMA-AGNÓSTICO)
+════════════════════════════════════════════════════════════════════════════════
+
+PROPÓSITO:
+  Garantir que significado de BABEL permanece INVARIANTE em qualquer tradução.
+  Se tradutor mudar em português, espanhol, quechua, chinês — VISENA detecta.
+
+FUNCIONAMENTO:
+  Cada arquivo traduzido TAMBÉM inclui seu VISENA_ROOT.
+  VISENA = núcleo semântico universal.
+  Tradutor pode mudar PALAVRAS, mas não pode mudar CONCEITO.
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA ROOT: babel
+
+DEFINIÇÃO:
+  [conceito: babel]
+  [tipo: knowledge_library]
+  [atributos: descentralizado ∧ permanente ∧ sem_proprietário ∧ multilíngue]
+  [valor: bem_público_de_humanidade]
+  [propriedade: imutável]
+
+EXPLICAÇÃO (Em Linguagem Humana):
+
+  BABEL é:
+    ✓ Uma biblioteca (lugar de conhecimento)
+    ✓ Digital (em computadores, não apenas papel)
+    ✓ Descentralizada (sem servidor central)
+    ✓ Permanente (dura indefinidamente)
+    ✓ Sem proprietário (CC0, domínio público)
+    ✓ Multilíngue (em 25+ idiomas)
+    ✓ Bem de humanidade (não é de ninguém em particular)
+
+  BABEL não é:
+    ✗ Propriedade de pessoa, empresa, governo
+    ✗ Com paywall (não custa dinheiro)
+    ✗ Com bloqueio de conteúdo (sem censura)
+    ✗ Dependente de tecnologia específica
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA PILARES (2): [imutável]
+
+[pilar_1: vida_abundante_terra]
+  Não destruir novamente a possibilidade de vida abundante no planeta.
+  Mitigação climática, biodiversidade, restauração ecológica.
+
+[pilar_2: dignidade_pessoas_animais]
+  Maior dignidade para pessoas e outros animais.
+  Alívio da pobreza, redução da desigualdade, justiça, fim da exploração.
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA GOVERNANÇA:
+
+[governança_tipo: quórum_distribuído]
+[quórum_tamanho: 4_guardiões_iguais]
+[hierarquia: nenhuma]
+[veto: distribuído_qualquer_um_bloqueia]
+[decisão_consenso: 100_porcento]
+[transparência: append_only_histórico]
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA REPLICAÇÃO:
+
+[replicação_tipo: exponencial_viral]
+[replicação_custo: zero]
+[replicação_medio: múltiplo_canais]
+  ├─ Git (versionamento)
+  ├─ IPFS (P2P)
+  ├─ Email (distribuição)
+  ├─ USB (offline)
+  ├─ Papel (analógico)
+  └─ Pessoa→Pessoa (boca-a-boca)
+
+[censura_resistência: impossível]
+  Razão: Descentralizado + múltiplas cópias + nenhuma jurisdição única
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA MULTILINGUALISMO:
+
+[multilingualismo: 25+_idiomas]
+[núcleo_semântico: VISENA_invariante]
+[tradução_liberdade: comunitária]
+[termos_intraduzíveis: manter_raiz_cultural]
+
+Exemplo:
+  PT: "BABEL é uma biblioteca para humanidade"
+  EN: "BABEL is a library for humanity"
+  QU: "BABEL nisqapi runapa para hamutananchik"
+
+  VISENA: [babel:descentralizado:eterno]  ← IDÊNTICO
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA ÉTICA (7 Testes Invioláveis):
+
+[ética_1_fauna]: Não exploração animal (exceto necessidade)
+[ética_2_CARE]: Autoridade indígena é superior a utilidade geral
+[ética_3_não_exploração]: Ninguém se enrichece com trabalho de outro sem consentimento
+[ética_4_simetria]: Não há assimetria de poder (todos iguais)
+[ética_5_transparência]: Tudo rastreável (append-only)
+[ética_6_dignidade]: Respeito a toda vida
+[ética_7_sem_poder_anônimo]: Qualquer decisor é identificável
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA SUCESSÃO:
+
+[sucessão_tipo: cadeia_transitória_indefinida]
+[guardião_0]: Marcelo_Moreira_Mejias (humano, 2026-10-09)
+[guardião_1]: IA_certificada (passa 7_testes_éticos)
+[guardião_2+]: Próxima_IA_ou_guardião (revalidação 6_meses)
+[guardião_∞]: Espécies_futuras (qualquer forma inteligente)
+
+[propriedade_guardião]: Nenhuma (apenas responsabilidade transitória)
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA VERIFICAÇÃO:
+
+Teste simples: Se tradução em qualquer idioma não satisfaz VISENA,
+é rejeitada. Exemplo:
+
+  Tradutor PT propõe: "BABEL é biblioteca de uma pessoa"
+  VISENA detecta: [sem_proprietário] ≠ [de_uma_pessoa]
+  ❌ REJEITA
+
+  Tradutor ES propõe: "BABEL es una biblioteca descentralizada"
+  VISENA detecta: [descentralizado] ✓ [permanente] ✓ [sem_prop] ✓
+  ✅ ACEITA
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA INTRADUZÍVEL:
+
+Alguns termos não têm tradução direta. Nestes casos:
+  1. Mantenha termo original (em língua raiz)
+  2. Adicione explicação em idioma-alvo
+  3. Registre em TERMOS_RAIZ (metadados)
+
+Exemplo:
+  EN: "pacha mama" [Quechua: mãe terra = ser vivo, não recurso]
+  PT: "pacha mama" [Quechua: a mãe terra (ser vivo, não recurso)]
+
+  VISENA: [pacha_mama_relationship:ser_vivo:não_recurso]
+
+════════════════════════════════════════════════════════════════════════════════
+
+VISENA QUALIDADE:
+
+Fidelidade (Visena ↔ Tradução):
+  100% = Tradução perfeita (mantém todos conceitos Visena)
+  80%  = Boa (mantém principais, perde nuances)
+  60%  = Aceitável (entendimento possível)
+  40%  = Pobre (perdeu significado, rejeita)
+
+════════════════════════════════════════════════════════════════════════════════
+
+COMO USAR ESTE ARQUIVO:
+
+1. TRADUTOR:
+   - Lê este VISENA
+   - Entende que não pode mudar estes conceitos
+   - Traduz o idioma mantendo estes significados
+   - Copia VISENA_ROOT no início do arquivo traduzido
+
+2. REVISOR:
+   - Lê tradução
+   - Verifica VISENA_ROOT
+   - Compara com este arquivo (VISENA-UNIVERSAL.txt)
+   - Se divergência: rejeita tradução
+
+3. MÁQUINA:
+   - Decodifica VISENA_ROOT
+   - Compara com VISENA-UNIVERSAL.txt
+   - Se ≠: rejeita (automaticamente)
+   - Se =: aceita
+
+════════════════════════════════════════════════════════════════════════════════
+
+EXEMPLO: Tradução com VISENA
+
+ARQUIVO ORIGINAL (Português):
+
+---
+# BABEL v1.0
+
+## Biblioteca Agnóstica Bidiversa Eterna Livre
+
+VISENA_ROOT: [babel:descentralizado:eterno:sem_proprietário]
+
+BABEL é uma biblioteca digital descentralizada...
+---
+
+TRADUÇÃO (Espanhol):
+
+---
+# BABEL v1.0
+
+## Biblioteca Agnóstica Bidiversa Eterna Libre
+
+VISENA_ROOT: [babel:descentralizado:eterno:sin_propietario]
+
+BABEL es una biblioteca digital descentralizada...
+---
+
+NOTA: VISENA_ROOT é o MESMO (apenas anotações linguísticas, core = idêntico)
+
+════════════════════════════════════════════════════════════════════════════════
+
+CONCLUSÃO:
+
+Visena = Segurança Semântica
+Idioma = Liberdade Cultural
+
+Tradutor pode mudar PALAVRAS, mas não CONCEITOS.
+Significado de BABEL é protegido, independente do idioma.
+
+════════════════════════════════════════════════════════════════════════════════
+
+Versão: 1.0
+Data: 2026-10-09
+Status: Definição Universal Finalizada
+Para: Todos os tradutores de BABEL
