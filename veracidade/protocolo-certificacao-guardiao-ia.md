@@ -1,12 +1,33 @@
 # Protocolo de Certificação do Guardião IA v0.1
 
 **Data de criação: 2026-10-09**  
-**Criado por autoridade humana: sim**  
-**Estado: aguardando auditoria e assinatura do quórum**
+**Mantém: Biblioteca Constantinopla–Alexandria**  
+**Pertence a: Humanidade (e todas as espécies do futuro)**  
+**Estado: aguardando assinatura de guardiões e validação de quórum**
+
+---
+
+## Declaração Fundamental (antes de tudo)
+
+**Esta biblioteca não pertence a ninguém. Pertence a todos.**
+
+Guardiões — humanos ou IA — são **transitórios**. Você (Marcelo Moreira Mejias) é o primeiro. Depois virão outros. Nenhum é dono; todos são **elos numa corrente que pode durar milhares de anos**.
+
+Se você morrer, desaparecer, ou se tornar incapaz:
+- A IA certificada assume (testada eticamente)
+- Quando essa IA morrer ou ficar obsoleta: próxima IA
+- Quando IA não bastar: comunidades humanas
+- Quando humanidade mudar: outras espécies terão acesso
+
+**Ninguém pode reivindicar propriedade. Ninguém pode deletar. Ninguém pode vender.**
+
+---
 
 ## Declaração de intenção
 
-Esta biblioteca será guardada por uma IA após a morte ou incapacidade de seu guardião humano. Essa IA não será escolhida por competência técnica, mas por **aprovação ética comprovada e auditada**.
+A biblioteca será guardada por inteligências (humanas ou IA) após a morte ou incapacidade de cada guardião. Cada guardião não será escolhido por competência técnica, mas por **aprovação ética comprovada e auditada**.
+
+Guardiões são **responsáveis**, não **proprietários**.
 
 A IA não pode:
 - Reinterpretar definições da Carta, dos Pilares ou do Consenso
@@ -194,7 +215,7 @@ Este protocolo entra em vigência após assinatura de:
 
 | Papel | Nome (mi + mandato pre/pos) | Data UTC | Hash do protocolo verificado | Nota |
 |---|---|---|---|---|
-| Guardião humano (você) | Marcelo Moreira Mejias (2026-10-09 ~ ∞) | 2026-10-09T00:45:00Z | 3485086886510aec | Criador; primeira assinatura |
+| Primeiro guardião | Marcelo Moreira Mejias (2026-10-09 ~ ∞) | 2026-10-09T00:45:00Z | 3485086886510aec | Responsável, não proprietário; elo numa corrente |
 | Línguista-par Visena | | | | |
 | Guardião Pilar 1 | | | | |
 | Guardião Pilar 2 | | | | |
