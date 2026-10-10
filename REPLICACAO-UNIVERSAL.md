@@ -448,22 +448,18 @@ Se TODAS falham?
 
 VERIFICAR INTEGRIDADE:
 
-Opção 1: sha256sum (terminal)
-  sha256sum arquivo.txt
-  Compara com .sha256
+Opção 1: Ferramenta de hash (qualquer linguagem)
+  Calcula sha256(arquivo)
+  Compara com arquivo.sha256
   
-Opção 2: Python
-  import hashlib
-  hashlib.sha256(open(...).read()).hexdigest()
+Opção 2: Serviço online
+  Website que calcula hash
   
-Opção 3: Online tool
-  Website de hash
-  
-Opção 4: Manual
+Opção 3: Manual
   Digitar hash com cuidado
   Comparar com papel
   
-Opção 5: Confiança
+Opção 4: Confiança
   Pessoa que passou verifica
   "Aqui está, é autentico"
   
@@ -504,58 +500,45 @@ Se nunca conectar?
 
 ## IX. Implementação Mínima (Prove Que Funciona)
 
-### Comece com isto:
+### Fluxo Universal (Pseudocódigo Agnóstico)
 
-```bash
-#!/bin/bash
-# sistema-universal.sh
+```
+1. CRIAR NÚCLEO
+   Criar diretório: /babel/
+   Criar arquivo: babel.txt (texto puro UTF-8)
+   Criar arquivo: babel.sha256 (hash SHA256)
 
-# 1. NÚCLEO: arquivo de texto puro
-mkdir -p biblioteca
-cat > biblioteca/manifesto.txt << 'EOF'
-BIBLIOTECA CONSTANTINOPLA-ALEXANDRIA v1.0
-Data: 2026-10-09
+2. DETECTAR AMBIENTE
+   Verifica: existe ferramenta de versionamento (Git, Mercurial)?
+   Verifica: existe acesso a rede descentralizada (IPFS)?
+   Verifica: existe email/SMTP?
+   Verifica: existe USB/mídia removível?
+   Verifica: é offline-only?
+   
+   Lista: adaptadores_disponíveis = [ ]
 
-[Seu conteúdo aqui em texto puro]
-EOF
+3. AUTO-REPLICAR
+   Para cada adaptador em adaptadores_disponíveis:
+     Se adaptador.pode_replicar():
+       adaptador.replicar(babel.txt)
+   
+   Resultado: arquivo está em 1+ lugares
 
-# 2. HASH
-sha256sum biblioteca/manifesto.txt > biblioteca/manifesto.sha256
-
-# 3. DETECTAR ADAPTADORES
-if command -v git &> /dev/null; then
-  echo "✓ Git disponível"
-fi
-
-if command -v ipfs &> /dev/null; then
-  echo "✓ IPFS disponível"
-fi
-
-if command -v mail &> /dev/null; then
-  echo "✓ Email disponível"
-fi
-
-if [ -d /media/usb ]; then
-  echo "✓ USB disponível"
-fi
-
-# 4. AUTO-REPLICAR (via disponíveis)
-if command -v git &> /dev/null; then
-  git add biblioteca/
-  git commit -m "Atualização universal"
-  git push origin main
-fi
-
-# 5. VERIFICAR
-sha256sum -c biblioteca/manifesto.sha256
-echo "Integridade validada ✓"
-
-# Pronto. Sistema funciona.
+4. VALIDAR
+   Para cada cópia do arquivo:
+     hash_calculado = sha256(arquivo)
+     hash_esperado = ler de babel.sha256
+     Se hash_calculado == hash_esperado:
+       ✓ Integridade confirmada
+     Senão:
+       ✗ Arquivo corrompido
+   
+   Pronto. Sistema funciona.
 ```
 
-**Isto funciona em QUALQUER SO com bash.**
-**Qualquer pessoa consegue entender.**
-**Não precisa de dependências extras.**
+**Isto funciona em QUALQUER SO, QUALQUER linguagem.**  
+**Qualquer pessoa consegue entender.**  
+**Não depende de tecnologia específica.**
 
 ---
 
