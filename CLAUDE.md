@@ -2,7 +2,7 @@
 
 ## Commits sem atribuição de autoria
 
-Este projeto foi deliberadamente estruturado para **não ter atribuição de autoria individual** — é consistente com a licença CC0 (domínio público) e a filosofia de divulgação anônima do BABEL.
+Este projeto foi deliberadamente estruturado para **não ter atribuição de autoria individual** — é consistente com a licença CC0 (domínio público) e a filosofia de divulgação anônima do BABEL. Além disso, o responsável foi direto sobre o motivo: "eu pago um serviço, portanto é meu ou não é de ninguém, nem de uma IA" — trabalho feito com ferramentas pagas (incluindo IA) pertence a quem paga, nunca à ferramenta.
 
 **Nunca** adicione linhas de atribuição a commits ou PRs neste repositório — isso inclui (mas não se limita a):
 - `Co-Authored-By: ...`
