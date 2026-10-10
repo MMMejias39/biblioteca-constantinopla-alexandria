@@ -1,0 +1,13 @@
+[package]
+name = "validador-manifesto"
+version.workspace = true
+edition.workspace = true
+description = "Validador de integridade de manifesto SHA256 - Biblioteca Constantinopla-Alexandria"
+
+[dependencies]
+sha2 = "0.10"
+hex = "0.4"
+
+[[bin]]
+name = "validador-manifesto"
+path = "src/main.rs"

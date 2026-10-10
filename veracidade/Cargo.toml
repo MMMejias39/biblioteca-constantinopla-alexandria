@@ -1,0 +1,8 @@
+[workspace]
+members = ["auditoria-ia", "validador-manifesto"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Biblioteca Constantinopla-Alexandria <guardiao@biblioteca.local>"]

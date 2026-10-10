@@ -5,3 +5,10 @@ Thumbs.db
 __pycache__/
 *.pyc
 biblioteca-fria/
+
+# Rust builds (artefatos compilados)
+target/
+Cargo.lock
+**/.cargo/
+*.rlib
+*.rmeta
