@@ -297,7 +297,72 @@ Resultado: Democracia linguística (não há \"certo\" único)
 
 ---
 
-## VI. Glossário Compartilhado (Visena)
+## VI. Termos Intraduzíveis — Preservar Raiz
+
+### Se tradução não consegue capturar significado
+
+```
+PRINCÍPIO: Se termo não tem equivalente em idioma-alvo,
+           mantenha CÓPIA NA LÍNGUA RAIZ + explicação.
+
+EXEMPLO 1: Quechua ← Português
+
+Português: "governança"
+Quechua: não tem conceito equivalente (tradição oral)
+Solução:
+  Manter: governance (em English, língua raiz inteligível)
+  Explicar: "En quechua, isto é **ayni** (reciprocidade)
+             governança é forma moderna de **ayni**"
+
+Resultado: Evita distorção semântica
+           Respeita origem linguística
+           Comunidade entende
+
+---
+
+EXEMPLO 2: Português ← Quechua
+
+Quechua: "pacha mama" (mãe terra)
+Português: "natureza" não consegue capturar
+Solução:
+  Manter: pacha mama (em quechua, língua raiz)
+  Explicar: "pacha mama = mãe terra (ser vivo, não recurso)"
+
+Resultado: Conhecimento indígena preservado
+           Significado não distorcido
+
+---
+
+PROTOCOLO INTRADUZÍVEL:
+
+1. DETECÇÃO: Revisor identifica termo intraduzível
+2. FLAGGING: Marca com [UNTRANSLATABLE: original]
+3. CÓPIA: Mantém original em idioma raiz
+4. EXPLICAÇÃO: Parágrafo explicativo
+5. FIDELIDADE: Reduz (78% em vez de 95%)
+6. HISTÓRICO: Registra em TERMOS_RAIZ (metadados)
+
+Exemplo:
+  TERMOS_RAIZ:
+    pacha_mama (quechua, não traduzível)
+    ayni (quechua, explica governança)
+
+No texto:
+  "Em nossa tradição [pacha_mama] (mãe terra em quechua)
+   é ser vivo, não recurso. Nosso [ayni] (reciprocidade)
+   é verdadeiro governo."
+
+VANTAGENS:
+  ✓ Significado preservado
+  ✓ Origem respeitada
+  ✓ Educativo (leitor aprende)
+  ✓ Honesto (marca intraduzível)
+  ✓ CARE-compliant (respeita autoridade indígena)
+```
+
+---
+
+## VII. Glossário Compartilhado (Visena)
 
 ### Como manter consistência entre idiomas?
 
@@ -495,9 +560,12 @@ REVISOR: Mamani, Yaya (anciões)
 FIDELIDADE: 78% (contexto cultural diferente)
 NOTAS: Alguns conceitos não têm equivalente direto em quechua.
        Usamos metáforas tradicionais.
+TERMOS_RAIZ: biodiversidade (mantém português), governance (mantém inglês)
 ---
 
 Llaqtapi kawsan (seres que habitam o lugar)...
+[biodiversidade] significa variedade de **kawsan** (termo quechua literal)
+Em governance (sistema de decisão), respeitamos **pacha mama** (mãe terra)...
 
 [resto em quechua...]
 
