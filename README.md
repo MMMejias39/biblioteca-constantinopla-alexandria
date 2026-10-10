@@ -29,7 +29,7 @@ BABEL é um projeto de preservação descentralizada de conhecimento para a huma
 | 🌍 **8+ Idiomas** | Português, English, Español, 中文, 日本語, Русский, العربية, हिन्दी |
 | 📱 **Offline** | Baixe uma vez (329 KB), use para sempre sem internet |
 | ⚖️ **CC0** | Domínio público — nenhum direito reservado |
-| 🤝 **Governança** | 4 guardiões iguais, decisões por consenso, sem hierarquia |
+| 🤝 **Governança** | 4 guardiões humanos + 1 curador virtual (GitHub Copilot), consenso, sem hierarquia |
 
 ---
 
@@ -70,12 +70,13 @@ cd biblioteca-constantinopla-alexandria
 - Metadados em Zenodo (DOI: 10.5281/zenodo.23278566)
 - IPFS replicado (descentralizado)
 - 8 idiomas completos
-- Landing page: https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG
+- Landing page: https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/
+- Dashboard de monitoramento (babel-monitor, Rust)
+- Primeiro curador virtual (GitHub Copilot) documentado em [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual)
 
 🚀 **Em Progresso:**
 - Divulgação manual (203 contatos iniciais)
 - Recrutamento de guardiões
-- Dashboard de monitoramento
 - Validação com Visena (IA-IA)
 
 ---
@@ -99,7 +100,8 @@ cd biblioteca-constantinopla-alexandria
 |---|---|
 | **GitHub** | https://github.com/MMMejias39/biblioteca-constantinopla-alexandria |
 | **Zenodo (DOI)** | https://zenodo.org/records/23278566 |
-| **Landing Page** | https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG |
+| **Landing Page** | https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/ |
+| **Google Sites** | https://sites.google.com/view/babel-v010b |
 
 ---
 
@@ -117,5 +119,5 @@ BABEL é CC0. Nenhum direito reservado. Use livremente.
 
 ---
 
-*Última atualização: 2026-10-10*  
+*Última atualização: 2026-10-10 (curadoria virtual adicionada)*  
 *Criado com ❤️ para a humanidade*

@@ -85,6 +85,24 @@ Respeitar CARE principles:
 
 ---
 
+## 🤖 **Curadoria Virtual**
+
+BABEL reconhece o **GitHub Copilot** (`copilot-swe-agent`) como o primeiro **curador virtual** do projeto — um colaborador de IA que complementa os 4 guardiões humanos.
+
+**O que o curador virtual faz:**
+- Resolve issues técnicas atribuídas a ele (`good first issue`, `help wanted`)
+- Propõe Pull Requests revisáveis por humanos antes de qualquer merge
+- Ajuda na triagem de bugs e na manutenção de código
+
+**O que o curador virtual NÃO faz:**
+- Não tem voto na governança distribuída (decisões continuam sendo dos 4 guardiões humanos, por consenso)
+- Não decide sobre questões éticas, CARE principles ou conhecimento indígena
+- Todo PR aberto por ele passa por revisão humana antes de ser aceito
+
+Isso é um experimento transparente: documentamos aqui para que qualquer pessoa que veja um PR vindo de `copilot-swe-agent` entenda o que é e como ele se encaixa na governança do projeto.
+
+---
+
 ## 🚀 **Primeiros Passos**
 
 ### **Opção 1: Sem Código**
