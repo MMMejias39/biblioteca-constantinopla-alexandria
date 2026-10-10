@@ -194,7 +194,7 @@ Este protocolo entra em vigência após assinatura de:
 
 | Papel | Nome (mi + mandato pre/pos) | Data UTC | Hash do protocolo verificado | Nota |
 |---|---|---|---|---|
-| Guardião humano (você) | | | | |
+| Guardião humano (você) | Marcelo Moreira Mejias (2026-10-09 ~ ∞) | 2026-10-09T00:45:00Z | 3485086886510aec | Criador; primeira assinatura |
 | Línguista-par Visena | | | | |
 | Guardião Pilar 1 | | | | |
 | Guardião Pilar 2 | | | | |
