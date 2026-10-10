@@ -1,53 +1,121 @@
-# 📚 BABEL v1.0 — Biblioteca Agnóstica Bidiversa Eterna Livre
+# 📚 BABEL v0.10b
 
-## ⚡ Comece em 3 Passos
+**Biblioteca Agnóstica Bidiversa Eterna Livre** — Uma biblioteca descentralizada para preservar conhecimento por 300+ anos.
 
-1. **Leia:** `cat CARTA-DA-CONVIVENCIA.md` (5 min)
-2. **Compartilhe:** Envie link para 1 amigo
-3. **Contribua:** Adicione conhecimento ou tradução
-
-👉 **Guia Completo:** Ver `PRIMEIRO-USO.md`
+![Version](https://img.shields.io/badge/version-0.10b-blue)
+![License](https://img.shields.io/badge/license-CC0-green)
+![Status](https://img.shields.io/badge/status-Active%20Development-success)
 
 ---
 
-# Biblioteca Constantinopla–Alexandria (v0.x)
+## 🎯 Visão Geral
 
-## Conceito
-Duas bibliotecas, uma missão. **Alexandria** foi a ambição de reunir todo o conhecimento do mundo. **Constantinopla** foi quem preservou e transmitiu esse legado por quase mil anos após a queda da primeira. Esta biblioteca digital replica a dupla para os tempos atuais:
+BABEL é um projeto de preservação descentralizada de conhecimento para a humanidade. Diferente das bibliotecas tradicionais (Alexandria, Constantinopla) que foram destruídas pela história, BABEL reimagina como preservar conhecimento de forma que **ninguém pode censurar, bloquear ou destruir**.
 
-- **Papel Alexandria** — coletar e catalogar o conhecimento aberto relevante.
-- **Papel Constantinopla** — preservar, espelhar e distribuir com resiliência.
+### Por que BABEL?
 
-## Missão
-Curar, preservar e distribuir conhecimento aberto a serviço de dois pilares, em ordem de prioridade:
+- **Alexandria** (300 AC): Destruída por incêndios e guerras
+- **Constantinopla** (1.100 anos): Protegeu conhecimento, mas foi destruída em 1453
+- **BABEL v0.10b** (2026+): Descentralizado, permanente, replicado globalmente
 
-**Pilar 1 — Vida abundante na Terra** (prioridade máxima): não destruir novamente a possibilidade de vida abundante no planeta. Mitigação climática, biodiversidade e restauração ecológica.
+---
 
-**Pilar 2 — Dignidade para pessoas e outros animais** (prioridade imediata): maior dignidade para pessoas e outros animais mortos ou encerrados sem motivos concretos. Alívio da pobreza, redução da desigualdade sistêmica, justiça penal e fim da exploração animal sem justificativa.
+## ✨ Características Principais
 
-A priorização 80/20 (80,000 Hours) segue como **método** de seleção — não como fundamento. Os pilares vêm antes.
+| Característica | Descrição |
+|---|---|
+| 🔒 **Descentralizado** | Ninguém controla. Replicado em IPFS — cada pessoa é um nó |
+| ⏰ **Permanente** | Preservado por 300+ anos via papel, criptografia e blockchain |
+| 🌍 **8+ Idiomas** | Português, English, Español, 中文, 日本語, Русский, العربية, हिन्दी |
+| 📱 **Offline** | Baixe uma vez (329 KB), use para sempre sem internet |
+| ⚖️ **CC0** | Domínio público — nenhum direito reservado |
+| 🤝 **Governança** | 4 guardiões iguais, decisões por consenso, sem hierarquia |
 
-## Estrutura
-- `carta-da-convivencia.md` — a fundação do projeto (ninguém é dono; corrigir e reparar; CARE antes de FAIR)
-- `catalogo/conhecimento-aberto.md` — infraestruturas universais de conhecimento aberto (transversal aos pilares)
-- `catalogo/pilar-1-vida-abundante.md` — clima, biodiversidade e restauração
-- `catalogo/pilar-2-dignidade.md` — pessoas (saúde, educação, justiça) e outros animais
-- `catalogo/saberes-e-territorios.md` — saberes sob autoridade de quem os guarda (CARE)
-- `catalogo/poder-global.md` — observatório do poder global (ONU, OTAN e blocos) sob os 6 testes
-- `consenso-global.md` — núcleo de regras de consenso entre religiões e culturas (interseção, não soma)
-- `permanencia.md` — contrato de séculos: cláusulas de pedra, validação, linhagem (600 a.C.→2026), precedentes
-- `preservacao.md` — protocolo de preservação e redundância (núcleo Constantinopla)
-- `veracidade/` — a Marca de Veracidade: carimbo `(versão, hash, data)` + dossiê de quórum para as assinaturas
-- `espelhos/` — lista operacional da cadeia de espelhos (Codeberg, Forgejo, IA, Zenodo, IPFS, `.zim`, papel) + metadados prontos
-- `fria.sh` — gera a edição anual em papel (texto simples + manifesto + assinaturas)
-- `idioma/` — **Visena v0.1**, segunda língua da biblioteca: bondade, serenidade e convivência do bioma na gramática
+---
 
-## Princípios de curadoria
-0. **Ninguém é dono de nada**: cuidado, não posse. Saberes de povos originários seguem CARE (autoridade da comunidade), não cópia livre.
-1. **Legalidade e licenças abertas**: priorizar domínio público, Creative Commons e código aberto; documentar riscos legais quando existirem.
-2. **Redundância**: nenhuma obra crítica pode depender de um único servidor ou jurisdição.
-3. **Acesso sem conexão**: todo recurso essencial precisa de caminho offline (baixável).
-4. **Rastreabilidade**: cada entrada com link oficial e data de verificação.
+## 🚀 Quick Start
 
-## Licença
-MIT (ver `LICENSE`). Nota da Carta: MIT concede direitos, não posse — quem mantém, *kuro* (cuida). Saberes de povos originários seguem CARE: autoridade de quem os guarda vem antes desta licença.
+### 1. **Baixar BABEL**
+```bash
+git clone https://github.com/MMMejias39/biblioteca-constantinopla-alexandria.git
+cd biblioteca-constantinopla-alexandria
+```
+
+### 2. **Ver Estrutura**
+```
+├── MANIFESTO.sha256          # Hash de integridade
+├── BACKLOG.md                # Roadmap de desenvolvimento
+├── CONTRIBUTING.md           # Como contribuir
+├── catalogo/                 # Índice de conhecimentos
+├── idiomas/                  # Traduções (8+ idiomas)
+├── divulgacao/               # Materiais de divulgação
+├── veracidade/               # Validação e criptografia
+└── babel-monitor/            # Dashboard Rust de monitoramento
+```
+
+### 3. **Usar Offline**
+```bash
+# BABEL funciona sem internet
+# Abra os arquivos em qualquer editor de texto ou navegador
+# Todos os recursos necessários estão inclusos
+```
+
+---
+
+## 📊 Status Atual (v0.10b)
+
+✅ **Concluído:**
+- Estrutura base do projeto
+- 35+ arquivos documentados
+- Metadados em Zenodo (DOI: 10.5281/zenodo.23278566)
+- IPFS replicado (descentralizado)
+- 8 idiomas completos
+- Landing page: https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG
+
+🚀 **Em Progresso:**
+- Divulgação manual (203 contatos iniciais)
+- Recrutamento de guardiões
+- Dashboard de monitoramento
+- Validação com Visena (IA-IA)
+
+---
+
+## 🤝 Como Contribuir
+
+**Não precisa saber programação!** Há muitas formas de ajudar:
+
+- 📢 **Divulgação**: Compartilhe em redes sociais
+- 🌍 **Tradução**: Melhore traduções existentes
+- 💻 **Desenvolvimento**: Python, Rust, Web
+- 📚 **Educação**: Tutoriais e planos de aula
+
+**[→ Guia completo em CONTRIBUTING.md](./CONTRIBUTING.md)**
+
+---
+
+## 📍 Acesso
+
+| Plataforma | Link |
+|---|---|
+| **GitHub** | https://github.com/MMMejias39/biblioteca-constantinopla-alexandria |
+| **Zenodo (DOI)** | https://zenodo.org/records/23278566 |
+| **Landing Page** | https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG |
+
+---
+
+## 📜 Licença
+
+**CC0 1.0 Universal** — Domínio Público
+
+BABEL é CC0. Nenhum direito reservado. Use livremente.
+
+---
+
+**BABEL = Conhecimento para todos, para sempre.**
+
+🙏 Obrigado por ser parte dessa missão!
+
+---
+
+*Última atualização: 2026-10-10*  
+*Criado com ❤️ para a humanidade*
