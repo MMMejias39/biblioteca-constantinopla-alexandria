@@ -1,4 +1,16 @@
-# Biblioteca Constantinopla–Alexandria
+# 📚 BABEL v1.0 — Biblioteca Agnóstica Bidiversa Eterna Livre
+
+## ⚡ Comece em 3 Passos
+
+1. **Leia:** `cat CARTA-DA-CONVIVENCIA.md` (5 min)
+2. **Compartilhe:** Envie link para 1 amigo
+3. **Contribua:** Adicione conhecimento ou tradução
+
+👉 **Guia Completo:** Ver `PRIMEIRO-USO.md`
+
+---
+
+# Biblioteca Constantinopla–Alexandria (v0.x)
 
 ## Conceito
 Duas bibliotecas, uma missão. **Alexandria** foi a ambição de reunir todo o conhecimento do mundo. **Constantinopla** foi quem preservou e transmitiu esse legado por quase mil anos após a queda da primeira. Esta biblioteca digital replica a dupla para os tempos atuais:
