@@ -1,5 +1,4 @@
 use axum::{
-    extract::Path,
     http::StatusCode,
     response::IntoResponse,
     routing::{get, post},
@@ -215,19 +214,19 @@ async fn get_github_metrics(
     axum::extract::State(state): axum::extract::State<Arc<AppState>>,
 ) -> impl IntoResponse {
     let data = state.data.read().await;
-    Json(&data.github)
+    Json(data.github.clone())
 }
 
 async fn get_network_metrics(
     axum::extract::State(state): axum::extract::State<Arc<AppState>>,
 ) -> impl IntoResponse {
     let data = state.data.read().await;
-    Json(&data.network)
+    Json(data.network.clone())
 }
 
 async fn get_languages(
     axum::extract::State(state): axum::extract::State<Arc<AppState>>,
 ) -> impl IntoResponse {
     let data = state.data.read().await;
-    Json(&data.languages)
+    Json(data.languages.clone())
 }
