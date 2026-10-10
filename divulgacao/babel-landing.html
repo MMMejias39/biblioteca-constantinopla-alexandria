@@ -26,7 +26,6 @@
             background: white;
         }
 
-        /* Navigation */
         nav {
             background: var(--dark);
             color: white;
@@ -37,6 +36,8 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
         nav .logo {
@@ -44,13 +45,44 @@
             font-weight: bold;
         }
 
+        nav > div:nth-child(2) {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex: 1;
+        }
+
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 2rem;
         }
 
-        /* Hero Section */
+        .lang-selector {
+            display: flex;
+            gap: 0.4rem;
+            flex-wrap: wrap;
+        }
+
+        .lang-btn {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 0.35rem 0.65rem;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .lang-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .lang-btn:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
         .hero {
             background: linear-gradient(135deg, var(--dark) 0%, #1a1a2e 100%);
             color: white;
@@ -61,7 +93,6 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            animation: fadeInDown 0.8s ease;
         }
 
         .hero p {
@@ -115,7 +146,6 @@
             transform: translateY(-2px);
         }
 
-        /* Features Section */
         .features {
             padding: 4rem 2rem;
             max-width: 1200px;
@@ -158,7 +188,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Stats Section */
         .stats {
             background: var(--dark);
             color: white;
@@ -180,7 +209,6 @@
             color: var(--accent);
         }
 
-        /* Roadmap */
         .roadmap {
             padding: 4rem 2rem;
             max-width: 1200px;
@@ -214,7 +242,6 @@
             margin-bottom: 0.5rem;
         }
 
-        /* Call to Action */
         .cta-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
             color: white;
@@ -236,7 +263,6 @@
             margin-right: auto;
         }
 
-        /* Footer */
         footer {
             background: var(--dark);
             color: white;
@@ -250,18 +276,6 @@
             margin: 0 0.5rem;
         }
 
-        /* Animations */
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2rem;
@@ -272,144 +286,235 @@
                 gap: 1rem;
             }
 
-            nav a {
-                margin-left: 0;
+            nav > div:nth-child(2) {
+                flex-direction: column;
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="logo">📚 BABEL</div>
         <div>
-            <a href="#features">Características</a>
-            <a href="#roadmap">Roadmap</a>
-            <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria" target="_blank">GitHub</a>
+            <div>
+                <a href="#features" data-i18n="nav-features">Características</a>
+                <span style="margin: 0 1rem; color: rgba(255,255,255,0.3);">|</span>
+                <a href="#roadmap" data-i18n="nav-roadmap">Roadmap</a>
+                <span style="margin: 0 1rem; color: rgba(255,255,255,0.3);">|</span>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria" target="_blank">GitHub</a>
+            </div>
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="pt">PT</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="fr">FR</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="ja">JP</button>
+                <button class="lang-btn" data-lang="ru">РУ</button>
+                <button class="lang-btn" data-lang="ar">AR</button>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero">
         <h1>BABEL v0.10b</h1>
-        <p><strong>Biblioteca Descentralizada para Preservar Conhecimento por 300+ Anos</strong></p>
-        <p>Conhecimento democrático. Sem censura. Para sempre.</p>
+        <p><strong data-i18n="hero-title">Biblioteca Descentralizada para Preservar Conhecimento por 300+ Anos</strong></p>
+        <p data-i18n="hero-subtitle">Conhecimento democrático. Sem censura. Para sempre.</p>
 
         <div class="cta-buttons">
-            <a href="https://zenodo.org/records/23278566" class="btn btn-primary">📥 Baixar no Zenodo</a>
+            <a href="https://zenodo.org/records/23278566" class="btn btn-primary" data-i18n="btn-zenodo">📥 Baixar no Zenodo</a>
             <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria" class="btn btn-secondary">⭐ GitHub</a>
         </div>
     </section>
 
-    <!-- Features -->
+    <section style="background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%); padding: 4rem 2rem;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h2 class="section-title" data-i18n="history-title" style="margin-bottom: 2rem;">Por que BABEL?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+                <div style="padding: 1.5rem; background: white; border-radius: 0.5rem; border-left: 4px solid #2563eb;">
+                    <h3 style="color: #2563eb; margin-bottom: 0.5rem; font-size: 1.1rem;">📚 Biblioteca de Alexandria</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.5;">Fundada ~300 AC no Egito. Preservava conhecimento grego, egípcio e oriental. Destruída por incêndios e guerras. Símbolo de perda irrecuperável.</p>
+                </div>
+                <div style="padding: 1.5rem; background: white; border-radius: 0.5rem; border-left: 4px solid #ec4899;">
+                    <h3 style="color: #ec4899; margin-bottom: 0.5rem; font-size: 1.1rem;">🏛️ Biblioteca de Constantinopla</h3>
+                    <p style="font-size: 0.95rem; line-height: 1.5;">Preservou textos greco-romanos por 1.100 anos. Protegeu conhecimento durante Idade Média. Destruída em 1453. Fonte do Renascimento europeu.</p>
+                </div>
+            </div>
+            <div style="padding: 2rem; background: white; border-radius: 0.5rem; border-left: 4px solid #1e293b; margin-bottom: 2rem;">
+                <h3 style="color: #1e293b; margin-bottom: 1rem;">🌍 BABEL: Aprendizado Histórico</h3>
+                <p style="font-size: 0.95rem; line-height: 1.6;">As bibliotecas antigas eram centralizadas, vulneráveis a guerras, incêndios e censura. Seus acervos foram perdidos para a humanidade.</p>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.8rem;"><strong>BABEL reimagina isso para o século XXI:</strong> descentralizado (sem ponto único de falha), permanente (300+ anos), replicado globalmente (IPFS), acessível offline, e em 8+ idiomas.</p>
+                <p style="font-size: 0.95rem; line-height: 1.6; margin-top: 0.8rem;">Cada pessoa que baixa BABEL torna-se um guardião. Nenhuma guerra, censura ou desastre pode destruir o conhecimento humano de novo.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="features" class="features">
-        <h2 class="section-title">Por que BABEL?</h2>
+        <h2 class="section-title" data-i18n="features-title">Por que BABEL?</h2>
 
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">🔒</div>
-                <h3>Descentralizado</h3>
-                <p>Ninguém controla. Ninguém censura. Replicado em IPFS — cada pessoa é um nó.</p>
+                <h3 data-i18n="feature-1-title">Descentralizado</h3>
+                <p data-i18n="feature-1-desc">Ninguém controla. Ninguém censura. Replicado em IPFS — cada pessoa é um nó.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">⏰</div>
-                <h3>Permanente</h3>
-                <p>Preservado por 300+ anos. Cópia em papel. Hash criptográfico. Zenodo academic.</p>
+                <h3 data-i18n="feature-2-title">Permanente</h3>
+                <p data-i18n="feature-2-desc">Preservado por 300+ anos. Cópia em papel. Hash criptográfico. Zenodo academic.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">🌍</div>
-                <h3>8+ Idiomas</h3>
-                <p>Português, English, Español, 中文, 日本語, Русский, العربية, हिन्दी + mais.</p>
+                <h3 data-i18n="feature-3-title">8+ Idiomas</h3>
+                <p data-i18n="feature-3-desc">Português, English, Español, 中文, 日本語, Русский, العربية, हिन्दी + mais.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">📱</div>
-                <h3>Funciona Offline</h3>
-                <p>Sem internet? Sem problema. Baixe uma vez, use para sempre.</p>
+                <h3 data-i18n="feature-4-title">Funciona Offline</h3>
+                <p data-i18n="feature-4-desc">Sem internet? Sem problema. Baixe uma vez, use para sempre.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">👨‍👩‍👧‍👦</div>
-                <h3>Governança Distribuída</h3>
-                <p>4 guardiões iguais. Sem hierarquia. Decisões por consenso.</p>
+                <h3 data-i18n="feature-5-title">Governança Distribuída</h3>
+                <p data-i18n="feature-5-desc">4 guardiões iguais. Sem hierarquia. Decisões por consenso.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">⚖️</div>
-                <h3>CC0 (Público Domínio)</h3>
-                <p>Nenhum direito reservado. Use livremente. Comercialmente. Privadamente.</p>
+                <h3 data-i18n="feature-6-title">CC0 (Público Domínio)</h3>
+                <p data-i18n="feature-6-desc">Nenhum direito reservado. Use livremente. Comercialmente. Privadamente.</p>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
     <section class="stats">
         <div class="stats-grid">
             <div class="stat-item">
                 <h3>35+</h3>
-                <p>Arquivos</p>
+                <p data-i18n="stat-files">Arquivos</p>
             </div>
             <div class="stat-item">
                 <h3>8+</h3>
-                <p>Idiomas</p>
+                <p data-i18n="stat-langs">Idiomas</p>
             </div>
             <div class="stat-item">
                 <h3>329 KB</h3>
-                <p>Tamanho total</p>
+                <p data-i18n="stat-size">Tamanho total</p>
             </div>
             <div class="stat-item">
                 <h3>300+ anos</h3>
-                <p>Durabilidade</p>
+                <p data-i18n="stat-durability">Durabilidade</p>
             </div>
         </div>
     </section>
 
-    <!-- Roadmap -->
     <section id="roadmap" class="roadmap">
-        <h2 class="section-title">Roadmap</h2>
+        <h2 class="section-title" data-i18n="roadmap-title">Roadmap</h2>
 
         <div class="timeline">
             <div class="timeline-item">
-                <h4>v0.10b (AGORA)</h4>
-                <p>✅ Zenodo registrado • ✅ IPFS replicado • ✅ GitHub público • ✅ 8 idiomas</p>
+                <h4 data-i18n="roadmap-v010">v0.10b (AGORA)</h4>
+                <p data-i18n="roadmap-v010-desc">✅ Zenodo registrado • ✅ IPFS replicado • ✅ GitHub público • ✅ 8 idiomas</p>
             </div>
 
             <div class="timeline-item">
-                <h4>v0.20 (Outubro-Dezembro)</h4>
-                <p>🎯 3 espelhos (GitHub, Codeberg, Gitea) • 100 cópias papel • Comunidade 1K</p>
+                <h4 data-i18n="roadmap-v020">v0.20 (Outubro-Dezembro)</h4>
+                <p data-i18n="roadmap-v020-desc">🎯 3 espelhos (GitHub, Codeberg, Gitea) • 100 cópias papel • Comunidade 1K</p>
             </div>
 
             <div class="timeline-item">
-                <h4>v1.0 (2027)</h4>
-                <p>🚀 Produção estável • Educação integrada • 100K+ usuários • 50+ comunidades</p>
+                <h4 data-i18n="roadmap-v100">v1.0 (2027)</h4>
+                <p data-i18n="roadmap-v100-desc">🚀 Produção estável • Educação integrada • 100K+ usuários • 50+ comunidades</p>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
     <section class="cta-section">
-        <h2>Quer Participar?</h2>
-        <p>BABEL precisa de você. Não é necessário saber programação.</p>
+        <h2 data-i18n="cta-title">Quer Participar?</h2>
+        <p data-i18n="cta-subtitle">BABEL precisa de você. Não é necessário saber programação.</p>
 
         <div class="cta-buttons">
-            <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/issues" class="btn btn-primary">🔗 Contribua</a>
-            <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria" class="btn btn-secondary">📖 Leia Docs</a>
+            <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/issues" class="btn btn-primary" data-i18n="btn-contribute">🔗 Contribua</a>
+            <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria" class="btn btn-secondary" data-i18n="btn-docs">📖 Leia Docs</a>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>BABEL v0.10b • Preservando conhecimento descentralizado para a humanidade</p>
+        <p data-i18n="footer-main">BABEL v0.10b • Preservando conhecimento descentralizado para a humanidade</p>
         <p style="margin-top: 1rem; font-size: 0.9rem;">
             <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria">GitHub</a> •
             <a href="https://zenodo.org/records/23278566">Zenodo</a> •
             <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/LICENSE">CC0</a>
         </p>
-        <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">
-            Criado com ❤️ para a humanidade. Nenhum direito reservado.
-        </p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;" data-i18n="footer-love">Criado com ❤️ para a humanidade. Nenhum direito reservado.</p>
     </footer>
+
+    <script>
+        const translations = {
+            pt: {
+                "nav-features": "Características", "nav-roadmap": "Roadmap", "hero-title": "Biblioteca Descentralizada para Preservar Conhecimento por 300+ Anos", "hero-subtitle": "Conhecimento democrático. Sem censura. Para sempre.", "btn-zenodo": "📥 Baixar no Zenodo", "btn-contribute": "🔗 Contribua", "btn-docs": "📖 Leia Docs", "history-title": "Por que BABEL?", "features-title": "Por que BABEL?", "feature-1-title": "Descentralizado", "feature-1-desc": "Ninguém controla. Ninguém censura. Replicado em IPFS — cada pessoa é um nó.", "feature-2-title": "Permanente", "feature-2-desc": "Preservado por 300+ anos. Cópia em papel. Hash criptográfico. Zenodo academic.", "feature-3-title": "8+ Idiomas", "feature-3-desc": "Português, English, Español, 中文, 日本語, Русский, العربية, हिन्दी + mais.", "feature-4-title": "Funciona Offline", "feature-4-desc": "Sem internet? Sem problema. Baixe uma vez, use para sempre.", "feature-5-title": "Governança Distribuída", "feature-5-desc": "4 guardiões iguais. Sem hierarquia. Decisões por consenso.", "feature-6-title": "CC0 (Público Domínio)", "feature-6-desc": "Nenhum direito reservado. Use livremente. Comercialmente. Privadamente.", "stat-files": "Arquivos", "stat-langs": "Idiomas", "stat-size": "Tamanho total", "stat-durability": "Durabilidade", "roadmap-title": "Roadmap", "roadmap-v010": "v0.10b (AGORA)", "roadmap-v010-desc": "✅ Zenodo registrado • ✅ IPFS replicado • ✅ GitHub público • ✅ 8 idiomas", "roadmap-v020": "v0.20 (Outubro-Dezembro)", "roadmap-v020-desc": "🎯 3 espelhos (GitHub, Codeberg, Gitea) • 100 cópias papel • Comunidade 1K", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 Produção estável • Educação integrada • 100K+ usuários • 50+ comunidades", "cta-title": "Quer Participar?", "cta-subtitle": "BABEL precisa de você. Não é necessário saber programação.", "footer-main": "BABEL v0.10b • Preservando conhecimento descentralizado para a humanidade", "footer-love": "Criado com ❤️ para a humanidade. Nenhum direito reservado."
+            },
+            en: {
+                "nav-features": "Features", "nav-roadmap": "Roadmap", "hero-title": "Decentralized Library to Preserve Knowledge for 300+ Years", "hero-subtitle": "Democratic knowledge. No censorship. Forever.", "btn-zenodo": "📥 Download on Zenodo", "btn-contribute": "🔗 Contribute", "btn-docs": "📖 Read Docs", "history-title": "Why BABEL?", "features-title": "Why BABEL?", "feature-1-title": "Decentralized", "feature-1-desc": "No one controls. No one censors. Replicated on IPFS — everyone is a node.", "feature-2-title": "Permanent", "feature-2-desc": "Preserved for 300+ years. Paper copy. Cryptographic hash. Academic Zenodo.", "feature-3-title": "8+ Languages", "feature-3-desc": "Portuguese, English, Spanish, 中文, 日本語, Русский, العربية, हिन्दी + more.", "feature-4-title": "Works Offline", "feature-4-desc": "No internet? No problem. Download once, use forever.", "feature-5-title": "Distributed Governance", "feature-5-desc": "4 equal guardians. No hierarchy. Consensus-based decisions.", "feature-6-title": "CC0 (Public Domain)", "feature-6-desc": "No rights reserved. Use freely. Commercially. Privately.", "stat-files": "Files", "stat-langs": "Languages", "stat-size": "Total Size", "stat-durability": "Durability", "roadmap-title": "Roadmap", "roadmap-v010": "v0.10b (NOW)", "roadmap-v010-desc": "✅ Zenodo registered • ✅ IPFS replicated • ✅ GitHub public • ✅ 8 languages", "roadmap-v020": "v0.20 (October-December)", "roadmap-v020-desc": "🎯 3 mirrors (GitHub, Codeberg, Gitea) • 100 paper copies • 1K community", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 Stable production • Integrated education • 100K+ users • 50+ communities", "cta-title": "Want to Participate?", "cta-subtitle": "BABEL needs you. No programming knowledge required.", "footer-main": "BABEL v0.10b • Preserving decentralized knowledge for humanity", "footer-love": "Created with ❤️ for humanity. No rights reserved."
+            },
+            es: {
+                "nav-features": "Características", "nav-roadmap": "Hoja de ruta", "hero-title": "Biblioteca Descentralizada para Preservar Conocimiento por 300+ Años", "hero-subtitle": "Conocimiento democrático. Sin censura. Para siempre.", "btn-zenodo": "📥 Descargar en Zenodo", "btn-contribute": "🔗 Contribuir", "btn-docs": "📖 Leer Documentos", "history-title": "¿Por qué BABEL?", "features-title": "¿Por qué BABEL?", "feature-1-title": "Descentralizado", "feature-1-desc": "Nadie controla. Nadie censura. Replicado en IPFS — cada persona es un nodo.", "feature-2-title": "Permanente", "feature-2-desc": "Preservado por 300+ años. Copia en papel. Hash criptográfico. Zenodo académico.", "feature-3-title": "8+ Idiomas", "feature-3-desc": "Portugués, Inglés, Español, 中文, 日本語, Русский, العربية, हिन्दी + más.", "feature-4-title": "Funciona sin conexión", "feature-4-desc": "¿Sin internet? Sin problema. Descarga una vez, usa para siempre.", "feature-5-title": "Gobernanza Distribuida", "feature-5-desc": "4 guardianes iguales. Sin jerarquía. Decisiones por consenso.", "feature-6-title": "CC0 (Dominio Público)", "feature-6-desc": "Sin derechos reservados. Úsalo libremente. Comercialmente. Privadamente.", "stat-files": "Archivos", "stat-langs": "Idiomas", "stat-size": "Tamaño total", "stat-durability": "Durabilidad", "roadmap-title": "Hoja de ruta", "roadmap-v010": "v0.10b (AHORA)", "roadmap-v010-desc": "✅ Zenodo registrado • ✅ IPFS replicado • ✅ GitHub público • ✅ 8 idiomas", "roadmap-v020": "v0.20 (Octubre-Diciembre)", "roadmap-v020-desc": "🎯 3 espejos (GitHub, Codeberg, Gitea) • 100 copias papel • Comunidad 1K", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 Producción estable • Educación integrada • 100K+ usuarios • 50+ comunidades", "cta-title": "¿Quieres Participar?", "cta-subtitle": "BABEL te necesita. No necesitas conocimientos de programación.", "footer-main": "BABEL v0.10b • Preservando conocimiento descentralizado para la humanidad", "footer-love": "Creado con ❤️ para la humanidad. Sin derechos reservados."
+            },
+            fr: {
+                "nav-features": "Caractéristiques", "nav-roadmap": "Feuille de route", "hero-title": "Bibliothèque Décentralisée pour Préserver le Savoir pendant 300+ Ans", "hero-subtitle": "Savoir démocratique. Pas de censure. Pour toujours.", "btn-zenodo": "📥 Télécharger sur Zenodo", "btn-contribute": "🔗 Contribuer", "btn-docs": "📖 Lire la Documentation", "history-title": "Pourquoi BABEL?", "features-title": "Pourquoi BABEL?", "feature-1-title": "Décentralisé", "feature-1-desc": "Personne ne contrôle. Personne ne censure. Répliqué sur IPFS — chacun est un nœud.", "feature-2-title": "Permanent", "feature-2-desc": "Préservé pendant 300+ ans. Copie papier. Hash cryptographique. Zenodo académique.", "feature-3-title": "8+ Langues", "feature-3-desc": "Portugais, Anglais, Espagnol, 中文, 日本語, Русский, العربية, हिन्दी + plus.", "feature-4-title": "Fonctionne Hors Ligne", "feature-4-desc": "Pas d'internet? Pas de problème. Téléchargez une fois, utilisez pour toujours.", "feature-5-title": "Gouvernance Distribuée", "feature-5-desc": "4 gardiens égaux. Pas de hiérarchie. Décisions par consensus.", "feature-6-title": "CC0 (Domaine Public)", "feature-6-desc": "Aucun droit réservé. Utilisez librement. Commercialement. Privément.", "stat-files": "Fichiers", "stat-langs": "Langues", "stat-size": "Taille totale", "stat-durability": "Durabilité", "roadmap-title": "Feuille de route", "roadmap-v010": "v0.10b (MAINTENANT)", "roadmap-v010-desc": "✅ Zenodo enregistré • ✅ IPFS répliqué • ✅ GitHub public • ✅ 8 langues", "roadmap-v020": "v0.20 (Octobre-Décembre)", "roadmap-v020-desc": "🎯 3 miroirs (GitHub, Codeberg, Gitea) • 100 copies papier • Communauté 1K", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 Production stable • Éducation intégrée • 100K+ utilisateurs • 50+ communautés", "cta-title": "Vous Voulez Participer?", "cta-subtitle": "BABEL a besoin de vous. Aucune connaissance en programmation requise.", "footer-main": "BABEL v0.10b • Préservant le savoir décentralisé pour l'humanité", "footer-love": "Créé avec ❤️ pour l'humanité. Aucun droit réservé."
+            },
+            zh: {
+                "nav-features": "特性", "nav-roadmap": "路线图", "hero-title": "去中心化库，为人类保存知识300多年", "hero-subtitle": "民主知识。无审查。永远。", "btn-zenodo": "📥 从Zenodo下载", "btn-contribute": "🔗 贡献", "btn-docs": "📖 阅读文档", "history-title": "为什么选择BABEL?", "features-title": "为什么选择BABEL?", "feature-1-title": "去中心化", "feature-1-desc": "没人控制。没人审查。通过IPFS复制—每个人都是一个节点。", "feature-2-title": "永久性", "feature-2-desc": "保存300多年。纸质副本。密码学哈希。学术Zenodo。", "feature-3-title": "8+种语言", "feature-3-desc": "葡萄牙语、英语、西班牙语、中文、日本語、Русский、العربية、हिन्दी等。", "feature-4-title": "离线工作", "feature-4-desc": "没有网络?没问题。下载一次，永久使用。", "feature-5-title": "分布式治理", "feature-5-desc": "4个平等的守护者。无等级制度。共识决策。", "feature-6-title": "CC0（公共领域）", "feature-6-desc": "无权利保留。自由使用。商业用途。私人使用。", "stat-files": "文件数", "stat-langs": "语言", "stat-size": "总大小", "stat-durability": "耐久性", "roadmap-title": "路线图", "roadmap-v010": "v0.10b（现在）", "roadmap-v010-desc": "✅ Zenodo已注册 • ✅ IPFS已复制 • ✅ GitHub公开 • ✅ 8种语言", "roadmap-v020": "v0.20（10月-12月）", "roadmap-v020-desc": "🎯 3个镜像（GitHub、Codeberg、Gitea）• 100份纸质副本 • 1K社区", "roadmap-v100": "v1.0（2027）", "roadmap-v100-desc": "🚀 稳定生产 • 整合教育 • 100K+用户 • 50+社区", "cta-title": "想参与?", "cta-subtitle": "BABEL需要你。不需要编程知识。", "footer-main": "BABEL v0.10b • 为人类保存去中心化知识", "footer-love": "用❤️为人类创建。无权利保留。"
+            },
+            ja: {
+                "nav-features": "機能", "nav-roadmap": "ロードマップ", "hero-title": "300年以上の知識を保存するための分散型ライブラリ", "hero-subtitle": "民主的な知識。検閲なし。永遠に。", "btn-zenodo": "📥 Zenodoからダウンロード", "btn-contribute": "🔗 貢献する", "btn-docs": "📖 ドキュメントを読む", "history-title": "BABELを選ぶ理由は?", "features-title": "BABELを選ぶ理由は?", "feature-1-title": "分散型", "feature-1-desc": "誰も支配しません。誰も検閲しません。IPFS上で複製—誰もがノードです。", "feature-2-title": "恒久的", "feature-2-desc": "300年以上保存。紙コピー。暗号化ハッシュ。学術的Zenodo。", "feature-3-title": "8+言語", "feature-3-desc": "ポルトガル語、英語、スペイン語、中文、日本語、Русский、العربية、हिन्दी等。", "feature-4-title": "オフラインで動作", "feature-4-desc": "インターネットなし?問題ありません。1回ダウンロードして、永久に使用します。", "feature-5-title": "分散型ガバナンス", "feature-5-desc": "4人の平等な保護者。階級制度なし。コンセンサスに基づく決定。", "feature-6-title": "CC0（パブリックドメイン）", "feature-6-desc": "著作権なし。自由に使用します。商業的に。個人的に。", "stat-files": "ファイル", "stat-langs": "言語", "stat-size": "合計サイズ", "stat-durability": "耐久性", "roadmap-title": "ロードマップ", "roadmap-v010": "v0.10b（今すぐ）", "roadmap-v010-desc": "✅ Zenodo登録済み • ✅ IPFS複製済み • ✅ GitHub公開 • ✅ 8言語", "roadmap-v020": "v0.20（10月〜12月）", "roadmap-v020-desc": "🎯 3つのミラー（GitHub、Codeberg、Gitea）• 100部の紙焼き • 1Kコミュニティ", "roadmap-v100": "v1.0（2027）", "roadmap-v100-desc": "🚀 安定した本番環境 • 統合教育 • 100K+ユーザー • 50+コミュニティ", "cta-title": "参加しませんか?", "cta-subtitle": "BABELはあなたを必要としています。プログラミングの知識は必要ありません。", "footer-main": "BABEL v0.10b • 人類のための分散型知識を保存", "footer-love": "❤️を込めて人類のために作成されました。著作権なし。"
+            },
+            ru: {
+                "nav-features": "Особенности", "nav-roadmap": "Дорожная карта", "hero-title": "Децентрализованная библиотека для сохранения знаний на 300+ лет", "hero-subtitle": "Демократичное знание. Без цензуры. Навсегда.", "btn-zenodo": "📥 Скачать с Zenodo", "btn-contribute": "🔗 Способствовать", "btn-docs": "📖 Читать документацию", "history-title": "Почему BABEL?", "features-title": "Почему BABEL?", "feature-1-title": "Децентрализованный", "feature-1-desc": "Никто не контролирует. Никто не цензурирует. Реплицировано на IPFS — каждый является узлом.", "feature-2-title": "Постоянный", "feature-2-desc": "Сохранено на 300+ лет. Бумажная копия. Криптографический хеш. Академический Zenodo.", "feature-3-title": "8+ языков", "feature-3-desc": "Португальский, Английский, Испанский, 中文, 日本語, Русский, العربية, हिन्दी и более.", "feature-4-title": "Работает в автономном режиме", "feature-4-desc": "Нет интернета? Нет проблем. Загрузите один раз, используйте навсегда.", "feature-5-title": "Распределённое управление", "feature-5-desc": "4 равных хранителя. Без иерархии. Решения на основе консенсуса.", "feature-6-title": "CC0 (Общественное достояние)", "feature-6-desc": "Без прав. Используйте свободно. Коммерчески. Приватно.", "stat-files": "Файлы", "stat-langs": "Языки", "stat-size": "Общий размер", "stat-durability": "Долговечность", "roadmap-title": "Дорожная карта", "roadmap-v010": "v0.10b (СЕЙЧАС)", "roadmap-v010-desc": "✅ Зарегистрировано в Zenodo • ✅ Реплицировано в IPFS • ✅ GitHub открыт • ✅ 8 языков", "roadmap-v020": "v0.20 (Октябрь-Декабрь)", "roadmap-v020-desc": "🎯 3 зеркала (GitHub, Codeberg, Gitea) • 100 бумажных копий • 1K сообщество", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 Стабильное производство • Интегрированное образование • 100K+ пользователей • 50+ сообществ", "cta-title": "Хотите участвовать?", "cta-subtitle": "BABEL нуждается в вас. Знания программирования не требуются.", "footer-main": "BABEL v0.10b • Сохранение децентрализованного знания для человечества", "footer-love": "Создано с ❤️ для человечества. Без прав."
+            },
+            ar: {
+                "nav-features": "الميزات", "nav-roadmap": "خريطة الطريق", "hero-title": "مكتبة لامركزية للحفاظ على المعرفة لمدة 300+ سنة", "hero-subtitle": "معرفة ديمقراطية. بدون رقابة. للأبد.", "btn-zenodo": "📥 تحميل من Zenodo", "btn-contribute": "🔗 المساهمة", "btn-docs": "📖 اقرأ الوثائق", "history-title": "لماذا BABEL؟", "features-title": "لماذا BABEL؟", "feature-1-title": "لامركزي", "feature-1-desc": "لا أحد يسيطر. لا أحد يفرض الرقابة. مكرر على IPFS — الجميع عقدة.", "feature-2-title": "دائم", "feature-2-desc": "محفوظ لمدة 300+ سنة. نسخة ورقية. بصمة تشفير. Zenodo الأكاديمي.", "feature-3-title": "8+ لغات", "feature-3-desc": "البرتغالية والإنجليزية والإسبانية و中文 و日本語 وРусский والعربية وहिन्दी وغيرها.", "feature-4-title": "يعمل بدون اتصال", "feature-4-desc": "بدون إنترنت؟ لا توجد مشكلة. حمل مرة واحدة، استخدم إلى الأبد.", "feature-5-title": "الحوكمة الموزعة", "feature-5-desc": "4 أوصياء متساوون. بدون تسلسل هرمي. القرارات على أساس التوافق.", "feature-6-title": "CC0 (الملك العام)", "feature-6-desc": "بدون حقوق محفوظة. استخدم بحرية. تجاريًا. بشكل خاص.", "stat-files": "الملفات", "stat-langs": "اللغات", "stat-size": "الحجم الإجمالي", "stat-durability": "المتانة", "roadmap-title": "خريطة الطريق", "roadmap-v010": "v0.10b (الآن)", "roadmap-v010-desc": "✅ مسجل في Zenodo • ✅ مكرر على IPFS • ✅ GitHub عام • ✅ 8 لغات", "roadmap-v020": "v0.20 (أكتوبر-ديسمبر)", "roadmap-v020-desc": "🎯 3 مرايا (GitHub و Codeberg و Gitea) • 100 نسخة ورقية • 1K مجتمع", "roadmap-v100": "v1.0 (2027)", "roadmap-v100-desc": "🚀 الإنتاج المستقر • التعليم المتكامل • 100K+ المستخدمين • 50+ المجتمعات", "cta-title": "تريد أن تشارك؟", "cta-subtitle": "BABEL يحتاج إليك. لا يلزم معرفة البرمجة.", "footer-main": "BABEL v0.10b • الحفاظ على المعرفة اللامركزية للبشرية", "footer-love": "تم الإنشاء بـ ❤️ للبشرية. بدون حقوق محفوظة."
+            }
+        };
+
+        function detectLanguage() {
+            const userLang = navigator.language.substring(0, 2).toLowerCase();
+            const supportedLangs = ['pt', 'en', 'es', 'fr', 'zh', 'ja', 'ru', 'ar'];
+            return supportedLangs.includes(userLang) ? userLang : 'en';
+        }
+
+        function setLanguage(lang) {
+            localStorage.setItem('babel-lang', lang);
+            document.documentElement.lang = lang;
+
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    el.textContent = translations[lang][key];
+                }
+            });
+
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.getAttribute('data-lang') === lang) {
+                    btn.classList.add('active');
+                }
+            });
+        }
+
+        const savedLang = localStorage.getItem('babel-lang') || detectLanguage();
+        setLanguage(savedLang);
+
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                setLanguage(e.target.getAttribute('data-lang'));
+            });
+        });
+    </script>
 </body>
 </html>
