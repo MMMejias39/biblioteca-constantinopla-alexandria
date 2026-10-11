@@ -465,9 +465,31 @@ Você só vê relatório mensal de o que foi integrado.
 ### Como mineiros não destroem biblioteca com lixo?
 
 ```
-Filtro 1: Licença
-  ✅ CC0, MIT, CARE, Public Domain
+Filtro 1: Licença e Copyright
+  ✅ CC0, MIT, domínio público confirmado, licença explícita de reuso
+  ⚠️ Licença restritiva (ex: CC BY-NC, "não-comercial com atribuição"):
+     pode ser CONSULTADO e usado internamente, mas NÃO rebaixado para
+     CC0 nem redistribuído como se fosse domínio público — a condição
+     original da licença permanece.
+  ❌ Copyright reservado sem autorização explícita de reprodução
+     (ex: "não pode ser reproduzido em nenhuma forma sem autorização"):
+     NÃO integrar. Vale só como fonte de consulta/descoberta.
   ❌ Propriedade privada SEM permissão
+
+  Regra de ouro: respeitar o copyright não é burocracia, é a mesma
+  ética que justifica o CARE para conhecimento indígena — usar algo
+  sem autorização de quem tem autoridade sobre aquilo é o tipo de
+  extração que o Pilar 2 (dignidade) existe para evitar. Quando a
+  licença não está clara, tratar como ❌ até confirmar — nunca
+  presumir permissão por omissão.
+
+  Exemplo real (catalogo/patrimonio-historico-raro.md, 2026-10-11):
+  Vatican DigiVatLib permite LEITURA gratuita mas proíbe expressamente
+  reprodução sem autorização — registrado como fonte de consulta,
+  não de integração. Gallica (BnF) e Herculaneum Papyri (Vesuvius
+  Challenge) têm licença não-comercial — usáveis pelo BABEL (que não
+  tem fins lucrativos), mas sem poder "soltar" a restrição ao
+  redistribuir.
 
 Filtro 2: Origem confiável
   ✅ arXiv, DOAJ, universidades, ONGs

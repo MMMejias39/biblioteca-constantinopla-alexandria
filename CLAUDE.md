@@ -18,6 +18,17 @@ Mensagens de commit devem conter só a descrição da mudança, sem rodapé de a
 - 4 guardiões humanos, decisões por consenso, sem hierarquia
 - 1 curador virtual (GitHub Copilot / `copilot-swe-agent`) — sem voto, PRs sempre revisados por humano antes do merge. Ver [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual) e [.github/copilot-instructions.md](./.github/copilot-instructions.md)
 
+## Respeito a copyright na prospecção de conteúdo
+
+Ao prospectar/catalogar documentos de terceiros (ver `catalogo/` e `MINEIROS-CONHECIMENTO.md`), aplicar sempre o filtro de licença antes de integrar qualquer coisa:
+
+- ✅ CC0, domínio público confirmado, licença explícita de reuso → pode integrar
+- ⚠️ Licença restritiva (CC BY-NC, não-comercial com atribuição) → pode usar/consultar, **nunca redistribuir como se fosse CC0**
+- ❌ Copyright reservado, reprodução proibida sem autorização → **não integrar**, só registrar como fonte de consulta
+- Licença incerta → tratar como ❌ até confirmar. Nunca presumir permissão por omissão.
+
+Isso vale pela mesma lógica ética que justifica CARE para conhecimento indígena no projeto: usar algo sem autorização de quem tem autoridade sobre aquilo é extração, não curadoria.
+
 ## Estrutura
 
 - `docs/index.html` — landing page multilíngue (8 idiomas), servida via GitHub Pages em https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/. HTML/CSS/JS puro, sem build step.
