@@ -67,7 +67,6 @@ cd biblioteca-constantinopla-alexandria
 ✅ **Concluído:**
 - Estrutura base do projeto
 - 35+ arquivos documentados
-- Metadados em Zenodo (DOI: 10.5281/zenodo.23278566)
 - IPFS replicado (descentralizado)
 - 8 idiomas completos
 - Landing page: https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/
@@ -75,6 +74,7 @@ cd biblioteca-constantinopla-alexandria
 - Primeiro curador virtual (GitHub Copilot) documentado em [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual)
 
 🚀 **Em Progresso:**
+- **Publicação Zenodo** (bloqueada: depósito ainda em rascunho, DOI não resolve — ver item crítico #1 do [BACKLOG.md](./BACKLOG.md))
 - Divulgação manual (203 contatos iniciais)
 - Recrutamento de guardiões
 - Validação com Visena (IA-IA)
@@ -99,7 +99,7 @@ cd biblioteca-constantinopla-alexandria
 | Plataforma | Link |
 |---|---|
 | **GitHub** | https://github.com/MMMejias39/biblioteca-constantinopla-alexandria |
-| **Zenodo (DOI)** | https://zenodo.org/records/23278566 |
+| **Zenodo (DOI)** | ⏳ pendente — depósito em rascunho, ainda não publicado |
 | **Landing Page** | https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/ |
 | **Google Sites** | https://sites.google.com/view/babel-v010b |
 

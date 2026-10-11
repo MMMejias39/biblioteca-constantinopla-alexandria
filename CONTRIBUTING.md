@@ -13,9 +13,9 @@ Bem-vindo! BABEL é um projeto de preservação descentralizada de conhecimento.
 - Escreva sobre BABEL em seu blog
 
 **Como começar:**
-- Landing page: https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG
+- Landing page: https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/
 - GitHub: https://github.com/MMMejias39/biblioteca-constantinopla-alexandria
-- Zenodo: https://zenodo.org/records/23278566
+- Zenodo: ⏳ pendente (depósito ainda em rascunho, DOI não publicado)
 
 ---
 
@@ -144,8 +144,8 @@ Isso é um experimento transparente: documentamos aqui para que qualquer pessoa 
 ## 🔗 **Links Importantes**
 
 - **GitHub:** https://github.com/MMMejias39/biblioteca-constantinopla-alexandria
-- **Zenodo (acadêmico):** https://zenodo.org/records/23278566
-- **Landing page:** https://claude.ai/artifact/Fa58wP2dxqK53EfxQZVVCG
+- **Zenodo (acadêmico):** ⏳ pendente (depósito ainda em rascunho, DOI não publicado)
+- **Landing page:** https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/
 - **Issues abertas:** https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/issues
 
 ---
