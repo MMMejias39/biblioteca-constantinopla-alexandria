@@ -491,6 +491,21 @@ Filtro 1: Licença e Copyright
   tem fins lucrativos), mas sem poder "soltar" a restrição ao
   redistribuir.
 
+  Arquivo adormecido — ativação só em caso de dano ao original:
+  Para fontes ✅ e ⚠️, BABEL guarda uma cópia verificada (hash +
+  metadados) mas, enquanto o link/fonte original estiver no ar e
+  saudável, aponta para o ORIGINAL, não para a própria cópia — o
+  papel aqui é de preservação (failsafe), não de competir com a
+  fonte nem de redistribuir ativamente. A cópia local só é servida
+  publicamente se o original for danificado, sair do ar, ou tiver
+  acesso restringido/censurado — nesse momento, e só nesse momento,
+  o objetivo "preservação para a humanidade e o futuro" ativa a
+  distribuição da cópia guardada. Isso é compatível com licença
+  CC BY-NC (cópia para preservação é permitida; o que muda é só
+  quando a cópia é servida publicamente, não que ela existe).
+  Não muda nada para fontes ❌ (copyright reservado sem autorização):
+  ali a cópia nem deveria existir, dano ao original ou não.
+
 Filtro 2: Origem confiável
   ✅ arXiv, DOAJ, universidades, ONGs
   ✅ Pesquisadores que disponibilizam abertamente

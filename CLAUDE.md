@@ -29,6 +29,10 @@ Ao prospectar/catalogar documentos de terceiros (ver `catalogo/` e `MINEIROS-CON
 
 Isso vale pela mesma lógica ética que justifica CARE para conhecimento indígena no projeto: usar algo sem autorização de quem tem autoridade sobre aquilo é extração, não curadoria.
 
+**Arquivo adormecido, não espelho ativo:** para fontes ✅/⚠️, o BABEL guarda uma cópia verificada mas aponta para o link ORIGINAL enquanto ele estiver saudável — a cópia só é servida publicamente se o original for danificado, sair do ar ou for censurado. O papel é preservação para a humanidade e o futuro (failsafe), não redistribuição ativa nem competir com a fonte. Fontes ❌ continuam fora, dano ao original ou não.
+
+**Sempre citar a fonte** (mesmo quando a cópia adormecida for ativada): todo item do catálogo carrega autor/instituição, URL original e data de verificação — formato de citação técnica, não um link solto. Isso vale mesmo que a licença não exija atribuição legalmente (ex: World Digital Library só "pede" crédito, não exige) — é prática do projeto, não só obrigação legal.
+
 ## Estrutura
 
 - `docs/index.html` — landing page multilíngue (8 idiomas), servida via GitHub Pages em https://mmmejias39.github.io/biblioteca-constantinopla-alexandria/. HTML/CSS/JS puro, sem build step.
