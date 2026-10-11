@@ -18,6 +18,16 @@ Mensagens de commit devem conter só a descrição da mudança, sem rodapé de a
 - 4 guardiões humanos, decisões por consenso, sem hierarquia
 - 1 curador virtual (GitHub Copilot / `copilot-swe-agent`) — sem voto, PRs sempre revisados por humano antes do merge. Ver [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual) e [.github/copilot-instructions.md](./.github/copilot-instructions.md)
 
+## Regra do Bem — respeito ao trabalho e à pessoa do próximo
+
+Princípio geral, acima das regras específicas abaixo: toda pessoa, comunidade ou instituição tocada pelo BABEL merece respeito — pelo trabalho que produziu e por si mesma. As regras de copyright, arquivo adormecido e citação existem *por causa* deste princípio, não ao contrário.
+
+Na prática:
+- Crédito nunca é opcional por conveniência — mesmo quando a licença não exige, citar a fonte é respeitar o esforço de quem criou (ver "Sempre citar a fonte" abaixo).
+- Tempo e atenção de outra pessoa (guardiões, revisores, futuros colaboradores) são custos reais, não recurso a extrair de graça.
+- Comunicação com pessoas fora do projeto (divulgação, outreach, parcerias) deve ser honesta sobre quem é o BABEL e quem está falando — nunca disfarçada, nunca usando identidades falsas ou descartáveis para simular mais gente do que existe.
+- Licença incerta, autoria incerta ou impacto incerto sobre uma comunidade (ex.: conhecimento indígena, ver CARE) → tratar com cautela antes de agir, não depois.
+
 ## Respeito a copyright na prospecção de conteúdo
 
 Ao prospectar/catalogar documentos de terceiros (ver `catalogo/` e `MINEIROS-CONHECIMENTO.md`), aplicar sempre o filtro de licença antes de integrar qualquer coisa:
