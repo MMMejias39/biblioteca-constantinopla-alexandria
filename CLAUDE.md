@@ -26,6 +26,10 @@ Princípio geral, acima das regras específicas abaixo: toda pessoa, comunidade 
 - Se o conteúdo é de autoria própria → é dela, crédito legítimo.
 - Se **não** é de autoria própria → quem postou é responsável pelo dado colocado e por sua fonte — nunca pode apresentá-lo como se fosse seu.
 
+**Duas violações diferentes, não confundir:**
+1. **Fake news** — fabricar ou divulgar informação falsa. Errado pela falsidade do conteúdo em si, independente de quem assina. Solução: verificar a veracidade antes de publicar.
+2. **Publicar como se fosse autoria própria** — apresentar conteúdo de terceiros sem citar a fonte. Errado pela apropriação indevida, mesmo quando o conteúdo é inteiramente verdadeiro. Solução: sempre citar a fonte.
+
 Na prática:
 - Crédito nunca é opcional por conveniência — mesmo quando a licença não exige, citar a fonte é respeitar o esforço de quem criou (ver "Sempre citar a fonte" abaixo).
 - Tempo e atenção de outra pessoa (guardiões, revisores, futuros colaboradores) são custos reais, não recurso a extrair de graça.
