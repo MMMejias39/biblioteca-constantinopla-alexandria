@@ -18,14 +18,18 @@ Mensagens de commit devem conter só a descrição da mudança, sem rodapé de a
 - 4 guardiões humanos, decisões por consenso, sem hierarquia
 - 1 curador virtual (GitHub Copilot / `copilot-swe-agent`) — sem voto, PRs sempre revisados por humano antes do merge. Ver [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual) e [.github/copilot-instructions.md](./.github/copilot-instructions.md)
 
-## Regra do Bem — respeito ao trabalho e à pessoa do próximo
+## Regra do Bem — não ter posse sobre dados, não anonimato
 
 Princípio geral, acima das regras específicas abaixo: toda pessoa, comunidade ou instituição tocada pelo BABEL merece respeito — pelo trabalho que produziu e por si mesma. As regras de copyright, arquivo adormecido e citação existem *por causa* deste princípio, não ao contrário.
+
+**Importante não confundir:** o princípio não é anonimato (esconder quem fez algo). É não ter sentimento de posse sobre dados/conhecimento que não são seus. Quem posta pode ser plenamente identificável — o que importa é a relação com o dado, não com a própria identidade:
+- Se o conteúdo é de autoria própria → é dela, crédito legítimo.
+- Se **não** é de autoria própria → quem postou é responsável pelo dado colocado e por sua fonte — nunca pode apresentá-lo como se fosse seu.
 
 Na prática:
 - Crédito nunca é opcional por conveniência — mesmo quando a licença não exige, citar a fonte é respeitar o esforço de quem criou (ver "Sempre citar a fonte" abaixo).
 - Tempo e atenção de outra pessoa (guardiões, revisores, futuros colaboradores) são custos reais, não recurso a extrair de graça.
-- Comunicação com pessoas fora do projeto (divulgação, outreach, parcerias) deve ser honesta sobre quem é o BABEL e quem está falando — nunca disfarçada, nunca usando identidades falsas ou descartáveis para simular mais gente do que existe.
+- Comunicação com pessoas fora do projeto (divulgação, outreach, parcerias) deve ser honesta sobre a origem do que está sendo compartilhado — identidade de quem divulga é detalhe de privacidade, mas a fonte do dado nunca pode ser apagada ou apresentada como própria. Nunca usar identidades falsas ou descartáveis para simular mais gente ou mais fontes do que existe.
 - Licença incerta, autoria incerta ou impacto incerto sobre uma comunidade (ex.: conhecimento indígena, ver CARE) → tratar com cautela antes de agir, não depois.
 
 ## Respeito a copyright na prospecção de conteúdo
