@@ -1,5 +1,9 @@
 # Instruções de projeto — BABEL
 
+## Propósito fundador
+
+BABEL nasceu para ser **ética e divulgação de informação** — nunca desrespeito a quem criou essa informação. Toda regra abaixo (copyright, arquivo adormecido, citação obrigatória, Regra do Bem) é aplicação concreta deste propósito, não uma lista de restrições separada dele. Na dúvida sobre qualquer decisão nova do projeto, a pergunta de referência é: **isso divulga conhecimento respeitando quem o criou, ou passa por cima do criador em nome da divulgação?** Só a primeira opção é BABEL.
+
 ## Commits sem atribuição de autoria
 
 Este projeto foi deliberadamente estruturado para **não ter atribuição de autoria individual** — é consistente com a licença CC0 (domínio público) e a filosofia de divulgação anônima do BABEL. Além disso, o responsável foi direto sobre o motivo: "eu pago um serviço, portanto é meu ou não é de ninguém, nem de uma IA" — trabalho feito com ferramentas pagas (incluindo IA) pertence a quem paga, nunca à ferramenta.
