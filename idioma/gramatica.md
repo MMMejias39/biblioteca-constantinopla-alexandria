@@ -5,7 +5,7 @@ Ordem básica: **Sujeito — Verbo — Objeto**; modificadores **após** o núcl
 ## As sete regras ecológicas
 1. **Ser vivo é pessoa**: a 3ª pessoa é única — **ona** — para pessoas, outros animais e plantas. Distinção só quando necessária (pe/an/aro/pla). Falar mal de um bioma é, gramaticalmente, falar mal de alguém.
 2. **Não existe verbo "possuir"**: tudo que se "tem" se expressa com **ku** (cuidar) ou **kuro** (aquilo de que se cuida). Posse = responsabilidade.
-3. **Evidencialidade obrigatória**: toda oração afirmativa termina com fonte do saber — **ve** (vi direto), **ao** (ouvi de alguém), **so** (diz-se), **si** (sinto). Reduz fofoca, ruído e conflito; a conversa fica serena porque ninguém afirma o que não sabe.
+3. **Evidencialidade obrigatória em afirmações factuais**: toda oração que afirma um fato do mundo termina com fonte do saber — **ve** (vi direto), **ao** (ouvi de alguém), **so** (diz-se), **si** (sinto, estado interno), **su** (incerto/provável). Reduz fofoca, ruído e conflito; a conversa fica serena porque ninguém afirma o que não sabe. **Isenções (v0.5, provisório):** saudações, convites (**va**), perguntas (**ki**), recusas (**ne**) e lemas não carregam evidencial — não são afirmações factuais sobre o mundo. Ver registro em `processo.md`.
 4. **Imperativo é convite**: pedidos usam **va** antes do verbo. Nunca há forma de ordem; há convidar.
 5. **Recusa gentil**: **ne** sempre suavizada — **"ne, be."** ("não, com bondade").
 6. **Comparação sem humilhação**: comparações usam apenas **gran/pu**; não há superlativo degradante.

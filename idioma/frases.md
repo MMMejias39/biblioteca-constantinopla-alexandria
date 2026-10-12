@@ -22,7 +22,7 @@
 
 ## Evidenciais (veracidade serena)
 - **An son bel ve.** — o canto do animal é belo — eu vi
-- **Te pos gra be ao.** — a Terra vai ficar abundante em bondade — ouvi dizer
+- **Te pos gran be ao.** — a Terra vai ficar abundante em bondade — ouvi dizer
 - **Vi gran bel, si.** — a vida me parece muito bela — sinto
 
 ## Mottos dos pilares
@@ -31,7 +31,7 @@
 
 ## Perguntas de paz
 - **Ki tu vo?** — o que você quer?
-- **Tu si si-ne?** → **Tu si be?** — você está bem por dentro? ("sente bondade?")
+- **Tu si be?** — você está bem por dentro? ("sente bondade?")
 
 ## Veracidade e perpetuação (v0.4)
 - **Ve; ne mi; ne nu.** — a prova: sem meu nome, sem minha época (axioma do professor)

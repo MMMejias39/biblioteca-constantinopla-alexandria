@@ -20,6 +20,10 @@ Segunda língua da biblioteca, criada para o futuro — não herdando a decadên
 - Uma língua só vive com **prática comunitária**: o processo de adoção está em `processo.md` (governança, correções, corpus).
 - Distribuição offline pela biblioteca (pacote Kiwix) — coerente com o protocolo de preservação.
 
+## Aprenda Visena
+- `manual.md` — **Manual de ensino e aprendizado v0.1**: 8 lições por situação (não por lista), com exercícios. Comece por aqui se nunca viu a língua.
+- `gramatica.md`, `lexico.md`, `frases.md` — referência compacta, para depois de já saber usar a língua.
+
 ## Perfis de uso
 - `hmf.md` — **Perfil HMF**: interface Humano–Máquina–Fauna (interlíngua com evidenciais para decodificação por máquina).
 - `schema/` — **Visena-HMF v0.1** (JSON): esquema de etiquetas alinhado ao alp-data, com dignidade executável e validador.

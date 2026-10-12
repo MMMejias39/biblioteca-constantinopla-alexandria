@@ -9,7 +9,7 @@ Raízes monossílabas ou dissílabas simples; sem acentos; sílabas abertas (CV)
 **te** Terra, lar-mundo · **na** água · **fo** floresta, bioma · **aro** árvore · **pla** planta, erva · **an** outro animal sensiente · **sol** sol · **lu** luz · **ce** céu · **ven** vento · **son** som, canto · **flu** fluir, abundar
 
 ## Pessoas e valores
-**pe** pessoa humana · **an-pe** pessoa de outro tipo? não: **pe** já cobre; **am** amor, ternura · **be** bondade · **pa** paz · **sen** serenidade, calma · **res** respeito · **dig** dignidade · **bel** belo · **grat** grato
+**pe** pessoa humana · **am** amor, ternura · **be** bondade · **pa** paz · **sen** serenidade, calma · **res** respeito · **dig** dignidade · **bel** belo · **grat** grato
 
 ## Pronomes
 **mi** eu · **tu** tu, você · **ni** nós · **ona** qualquer ser vivo (3ª pessoa única — pessoas, outros animais, plantas)
