@@ -18,6 +18,12 @@ Mensagens de commit devem conter só a descrição da mudança, sem rodapé de a
 - 4 guardiões humanos, decisões por consenso, sem hierarquia
 - 1 curador virtual (GitHub Copilot / `copilot-swe-agent`) — sem voto, PRs sempre revisados por humano antes do merge. Ver [CONTRIBUTING.md](./CONTRIBUTING.md#-curadoria-virtual) e [.github/copilot-instructions.md](./.github/copilot-instructions.md)
 
+## Acesso livre e busca sem viés comercial
+
+Conteúdo que já é domínio comum (domínio público, CC0) **nunca** tem custo de acesso no BABEL — cobrar por algo que já pertence a todos contradiz o propósito do projeto.
+
+Qualquer mecanismo de busca/descoberta do BABEL tem que garantir que a pessoa encontre o que procura — sem indicação paga (nenhum resultado patrocinado se passando por orgânico) e sem indicação mal-intencionada (nenhum resultado manipulado para favorecer terceiros às custas de quem busca). É o que diferencia BABEL de buscadores/lojas de apps que misturam resultado pago com resultado real.
+
 ## Regra do Bem — não ter posse sobre dados, não anonimato
 
 Princípio geral, acima das regras específicas abaixo: toda pessoa, comunidade ou instituição tocada pelo BABEL merece respeito — pelo trabalho que produziu e por si mesma. As regras de copyright, arquivo adormecido e citação existem *por causa* deste princípio, não ao contrário.
