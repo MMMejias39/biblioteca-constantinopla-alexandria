@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo — BABEL</title>
+    <meta name="description" content="Índice dos conhecimentos curados e citados no catálogo BABEL.">
+    <style>
+        :root {
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --accent: #ec4899;
+            --text: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: white;
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            align-items: center;
+            background: var(--dark);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 900px;
+            padding: 3rem 2rem;
+        }
+
+        h1 {
+            color: var(--dark);
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .intro {
+            margin-bottom: 2rem;
+        }
+
+        .catalog-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        article {
+            background: var(--light);
+            border-radius: 0.5rem;
+            padding: 1.25rem;
+        }
+
+        article h2 {
+            color: var(--dark);
+            font-size: 1.25rem;
+            margin-bottom: 0.35rem;
+        }
+
+        article a {
+            color: #be185d;
+            display: inline-block;
+            font-weight: 600;
+            margin-top: 0.5rem;
+            text-decoration: none;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            main {
+                padding: 2rem 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html"><strong>📚 BABEL</strong></a>
+        <a href="index.html">Início</a>
+    </nav>
+    <main>
+        <h1>Catálogo BABEL</h1>
+        <p class="intro">Índice estático dos conhecimentos curados e citados no repositório. Consulte cada arquivo para ver fontes, referências e detalhes.</p>
+        <div class="catalog-list">
+            <article>
+                <h2>Conhecimento Aberto — núcleo Alexandria</h2>
+                <p>Diretórios, bibliotecas e repositórios de conhecimento aberto, ciência e memória digital.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/conhecimento-aberto.md">Ler arquivo no GitHub</a>
+            </article>
+            <article>
+                <h2>Patrimônio Histórico Raro e Documentação em Risco</h2>
+                <p>Arquivos e coleções digitais relevantes para preservar memórias documentais ameaçadas.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/patrimonio-historico-raro.md">Ler arquivo no GitHub</a>
+            </article>
+            <article>
+                <h2>Pilar 1 — Vida abundante na Terra</h2>
+                <p>Recursos e projetos abertos para clima, energia, biodiversidade e restauração.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/pilar-1-vida-abundante.md">Ler arquivo no GitHub</a>
+            </article>
+            <article>
+                <h2>Pilar 2 — Dignidade para pessoas e outros animais</h2>
+                <p>Iniciativas abertas de saúde, educação, justiça e cuidado para pessoas e outros animais.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/pilar-2-dignidade.md">Ler arquivo no GitHub</a>
+            </article>
+            <article>
+                <h2>Observatório do Poder Global</h2>
+                <p>Fatos documentados sobre instituições globais, concentração de poder e caminhos de reforma.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/poder-global.md">Ler arquivo no GitHub</a>
+            </article>
+            <article>
+                <h2>Saberes e Territórios</h2>
+                <p>Referências para conviver com saberes originários sob autoridade, consentimento e princípios CARE.</p>
+                <a href="https://github.com/MMMejias39/biblioteca-constantinopla-alexandria/blob/main/catalogo/saberes-e-territorios.md">Ler arquivo no GitHub</a>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <p>BABEL • <a href="index.html">Página inicial</a></p>
+    </footer>
+</body>
+</html>
